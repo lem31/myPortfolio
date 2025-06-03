@@ -10,7 +10,7 @@
  * @returns {JSX.Element} The rendered Header component.
  */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import hStyles from "../../CSS_Modules/Header/index.module.css";
 import Logo from '../../Assets/Images/PortfolioLogo.png';
 
@@ -28,21 +28,21 @@ function Header() {
 
 
     useEffect(() => {
-        const closeMenu = (event) => {
-            if (
-                !event.target.closest(`.${hStyles.nav}`) &&
-                !event.target.closest(`.${hStyles.hamburgerButton}`)
-            ) {
-                setIsMobileNavOpen(false);
-            }
-        };
-        document.addEventListener("click", closeMenu);
+  const closeMenu = (event) => {
+    if (
+      !event.target.closest(`.${hStyles.nav}`) &&
+      !event.target.closest(`.${hStyles.hamburgerButton}`)
+    ) {
+      setIsMobileNavOpen(false);
+    }
+  };
 
-        return () => {
-            document.removeEventListener("click", closeMenu);
+  document.addEventListener("click", closeMenu);
 
-        };
-    }, []);
+  return () => {
+    document.removeEventListener("click", closeMenu);
+  };
+}, [isMobileNavOpen]);
 
     return (
         <div>
@@ -59,7 +59,7 @@ function Header() {
                                     setIsMobileNavOpen((prevState) => !prevState);
                                 }}
                             >
-                                <MenuIcon/>
+                                <MenuIcon  className={hStyles.hamburgerButton}/>
                             </IconButton>
                         </div>
                     </div>
@@ -80,19 +80,32 @@ function Header() {
             </div>
 
             {isMobileNavOpen && (
-                <div className={hStyles.mobileNavDivBox}>
+                <div className={`${hStyles.mobileNavDiv} ${isMobileNavOpen ? hStyles.active : ""}`}>
                     <Drawer
-                        className={`${hStyles.mobileNavDiv} ${isMobileNavOpen ? hStyles.active : ""}`}
+                        anchor="left"
+  open={isMobileNavOpen}
+  onClose={() => setIsMobileNavOpen(false)}
+  className={`${hStyles.mobileNavDiv} ${isMobileNavOpen ? hStyles.active : ""}`}
+    sx={{
+    "& .MuiPaper-root": { backgroundColor: "rgb(253, 184, 253)" }
+  }}
                     >
                         <List className={hStyles.mobileNav}>
-                            <ListItem className={hStyles.navLink} href="/">
-                            My Portfolio
+                            <ListItem >
+                                <a className={hStyles.navLink} href="/"> My Portfolio</a>
+
                             </ListItem>
-                            <ListItem className={hStyles.navLink} href="/About">
-                              About
+                            <ListItem >
+                                <a className={hStyles.navLink} href="/About">
+                                    About
+                                </a>
+
                             </ListItem>
-                            <ListItem className={hStyles.navLink} href="/Contact">
-                               Contact
+                            <ListItem >
+                                <a className={hStyles.navLink} href="/Contact">
+                                    Contact
+                                </a>
+
                             </ListItem>
                         </List>
                     </Drawer>
