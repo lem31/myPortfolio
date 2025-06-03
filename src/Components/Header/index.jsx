@@ -10,8 +10,15 @@
  * @returns {JSX.Element} The rendered Header component.
  */
 
-import  { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import hStyles from "../../CSS_Modules/Header/index.module.css";
+import Logo from '../../Assets/Images/PortfolioLogo.png';
+
+import MenuIcon from "@mui/icons-material/Menu";
+import IconButton from "@mui/material/IconButton";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 
 
 
@@ -43,17 +50,17 @@ function Header() {
                 <header className={hStyles.header}>
                     <div className={hStyles.logoMenuDiv}>
                         <div className={hStyles.logoDiv}>
-                            <img  />
+                            <img src={Logo} className={hStyles.logo}/>
                         </div>
                         <div>
-                            <button
+                            <IconButton
                                 className={hStyles.hamburgerButton}
                                 onClick={() => {
                                     setIsMobileNavOpen((prevState) => !prevState);
                                 }}
                             >
-                                <img />
-                            </button>
+                                <MenuIcon/>
+                            </IconButton>
                         </div>
                     </div>
                     <nav className={hStyles.nav}>
@@ -74,21 +81,21 @@ function Header() {
 
             {isMobileNavOpen && (
                 <div className={hStyles.mobileNavDivBox}>
-                    <div
+                    <Drawer
                         className={`${hStyles.mobileNavDiv} ${isMobileNavOpen ? hStyles.active : ""}`}
                     >
-                        <nav className={hStyles.mobileNav}>
-                            <a className={hStyles.navLink} href="/">
-                                Stays
-                            </a>
-                            <a className={hStyles.navLink} href="/MyPortfolio">
-                                My Portfolio
-                            </a>
-                            <a className={hStyles.navLink} href="/About">
-                                About
-                            </a>
-                        </nav>
-                    </div>
+                        <List className={hStyles.mobileNav}>
+                            <ListItem className={hStyles.navLink} href="/">
+                            My Portfolio
+                            </ListItem>
+                            <ListItem className={hStyles.navLink} href="/About">
+                              About
+                            </ListItem>
+                            <ListItem className={hStyles.navLink} href="/Contact">
+                               Contact
+                            </ListItem>
+                        </List>
+                    </Drawer>
                 </div>
             )}
         </div>

@@ -25,14 +25,14 @@ function Footer() {
                   className={footerStyles.navIcons}
 
                 />
-                Register
+               About
               </a>
               <a  className={footerStyles.footerA}>
                 <img
                   className={footerStyles.navIcons}
 
                 />
-                Login
+               Contact
               </a>
             </div>
           </nav>
