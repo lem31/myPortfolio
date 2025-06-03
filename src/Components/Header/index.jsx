@@ -11,9 +11,9 @@
  */
 
 import  { useEffect, useState } from "react";
-import hStyles from "./Header.module.css";
-import Logo from "../../assets/logo.png";
-import Hamburger from "../../assets/hamburger.png";
+import hStyles from "../../CSS_Modules/Header/index.module.css";
+
+
 
 function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -43,7 +43,7 @@ function Header() {
                 <header className={hStyles.header}>
                     <div className={hStyles.logoMenuDiv}>
                         <div className={hStyles.logoDiv}>
-                            <img src={Logo} alt="Logo" className={hStyles.logo} />
+                            <img  />
                         </div>
                         <div>
                             <button
@@ -52,7 +52,7 @@ function Header() {
                                     setIsMobileNavOpen((prevState) => !prevState);
                                 }}
                             >
-                                <img src={Hamburger} alt="Hamburger Menu Icon" />
+                                <img />
                             </button>
                         </div>
                     </div>

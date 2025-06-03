@@ -1,3 +1,13 @@
+
+/**
+ * Footer component renders the footer section of the website.
+ * Includes copyright information, navigation links for Github Profile and About and Contact pages
+ *
+ * @component
+ * @returns {JSX.Element} The rendered footer component.
+ */
+import footerStyles from "../../CSS_Modules/Footer/index.module.css";
+
 function Footer() {
 
   return (
@@ -10,19 +20,17 @@ function Footer() {
 
           <nav className={footerStyles.registerLoginNav}>
             <div className={footerStyles.Ul}>
-              <a className={footerStyles.footerA} href="/Register">
+              <a className={footerStyles.footerA}>
                 <img
                   className={footerStyles.navIcons}
-                  src={Register}
-                  alt="Register icon"
+
                 />
                 Register
               </a>
-              <a href="/Login" className={footerStyles.footerA}>
+              <a  className={footerStyles.footerA}>
                 <img
                   className={footerStyles.navIcons}
-                  src={Login}
-                  alt="Login icon"
+
                 />
                 Login
               </a>

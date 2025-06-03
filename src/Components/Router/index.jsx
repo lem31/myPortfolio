@@ -15,6 +15,14 @@
  */
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Layout from "../Layout";
+// import MyPortfolio from "../MyPortfolio";
+// import ProjectOne from "../ProjectOne";
+// import ProjectTwo from "../ProjectTwo";
+// import ProjectThree from "../ProjectThree";
+// import About from "../About";
+// import Contact from "../Contact";
+
 
 function Router() {
   return (
@@ -25,7 +33,7 @@ function Router() {
             path="/"
             element={<Layout />}
           >
-            <Route
+            {/* <Route
               index
               element={<MyPortfolio />}
             />
@@ -48,7 +56,7 @@ function Router() {
             <Route
               path="/Contact"
               element={<Contact />}
-            />
+            /> */}
           </Route>
         </Routes>
       </BrowserRouter>
