@@ -1,4 +1,4 @@
-import profileVideo from '../../assets/Videos/ProfileCardVid.mp4';
+import profileVideo from '../../assets/Videos/ProfileVidPortfolio.mp4';
 import portfolioStyles from '../../CSS_Modules/Portfolio/index.module.css';
 
 const ProfileCard = () => {

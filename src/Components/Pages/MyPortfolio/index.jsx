@@ -14,7 +14,18 @@ const projects = [
 const PortfolioPage = () => {
   return (
     <div  className={portfolioStyles.portfolioPageDiv}>
+        <div className={portfolioStyles.profileCardH1Div}>
     <ProfileCard />
+
+<div className={portfolioStyles.portfolioTitleDiv}>
+    <h1 className={portfolioStyles.portfolioTitle}>Portfolio</h1>
+
+ <p> Welcome to my portfolio! Here, you can explore some of the projects I've worked on.
+    Each project showcases my skills and creativity as a developer.
+    Click on any project card title to learn more about it.</p>
+    </div>
+    </div>
+
 
 
     <div style={{ display: "flex", flexDirection: 'row', gap: "20px", justifyContent: "center", width: "100%", maxWidth:'1260px', flexWrap: 'wrap', paddingTop: "120px", margin:'0 auto' }}>
