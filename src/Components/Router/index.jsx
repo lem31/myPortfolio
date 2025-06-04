@@ -16,8 +16,8 @@
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "../Layout";
-// import MyPortfolio from "../MyPortfolio";
-// import ProjectOne from "../ProjectOne";
+import PortfolioPage from "../../Components/Pages/MyPortfolio";
+import HolidazeProject from "../Pages/ProjectOne";
 // import ProjectTwo from "../ProjectTwo";
 // import ProjectThree from "../ProjectThree";
 // import About from "../About";
@@ -33,15 +33,16 @@ function Router() {
             path="/"
             element={<Layout />}
           >
-            {/* <Route
+           <Route
               index
-              element={<MyPortfolio />}
+              element={<PortfolioPage />}
             />
-            <Route
+            /*<Route
               path="/ProjectOne"
-              element={<ProjectOne />}
+              element={<HolidazeProject/>}
             />
-            <Route
+
+            { /*<Route
               path="/ProjectTwo"
               element={<ProjectTwo />}
             />

@@ -1,0 +1,41 @@
+import ProjectCard from "../../ProjectCard";
+import HolidazeMainImage from "../../../assets/Images/HolidazeMainImage.jpg";
+import StoreMainImage from "../../../assets/Images/StoreMainImg.png";
+import AuctionMainImage from "../../../assets/Images/AuctionAppMainImg.png";
+import ProfileCard from "../../ProfileCard";
+import portfolioStyles from "../../../CSS_Modules/Portfolio/index.module.css";
+import globStyles from "../../../CSS_Modules/Global/index.module.css";
+
+const projects = [
+  { title: "Holidaze App", image: HolidazeMainImage, link: "/ProjectOne" },
+  { title: "Store App", image: StoreMainImage, link: "/ProjectTwo" },
+   { title: "Auction App", image: AuctionMainImage, link: "/ProjectThree" },
+];
+
+const PortfolioPage = () => {
+  return (
+    <div  className={portfolioStyles.portfolioPageDiv}>
+        <div className={portfolioStyles.profileCardH1Div}>
+    <ProfileCard />
+
+<div className={portfolioStyles.portfolioTitleDiv}>
+    <h1 className={globStyles.h1}>Portfolio</h1>
+
+ <p className={globStyles.body}> Welcome to my portfolio! Here, you can explore some of the projects I've worked on.
+    Each project showcases my skills and creativity as a developer.
+    Click on any project card title to learn more about it.</p>
+    </div>
+    </div>
+
+
+
+    <div style={{ display: "flex", flexDirection: 'row', gap: "20px", justifyContent: "center", width: "100%", maxWidth:'1260px', flexWrap: 'wrap', paddingTop: "120px", margin:'0 auto' }}>
+      {projects.map((project, index) => (
+        <ProjectCard key={index} {...project} />
+      ))}
+    </div>
+     </div>
+  );
+};
+
+export default PortfolioPage;

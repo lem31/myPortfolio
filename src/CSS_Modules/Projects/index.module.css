@@ -1,0 +1,111 @@
+.projectCard {
+  width: 80vw;
+  height:  100%;
+  padding: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  align-self: center;
+  justify-self: center;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectCardContent {
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+
+  overflow-y: auto;
+
+  gap: 20px;
+}
+
+.projectCardTextDiv {
+  width: max-content;
+}
+
+.TextImageDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+}
+
+.logoH1Div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.HolidazeLogo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.projectCardImgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 400px;
+}
+
+.projectCardDescription {
+  width: auto;
+}
+
+.projectCardImage {
+  width: 100%;
+  height: 100%;
+  scale: 1;
+  border-radius: 20px;
+}
+
+.p {
+  width: auto;
+  max-width: 400px;
+}
+
+.cardImgDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 50vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    scale: 1.8;
+
+    border: none;
+
+    box-shadow: 0 0 40px 10px var(--secondary-color-2), 0 0 0 4px rgba(0,0,0,0.2);
+}
