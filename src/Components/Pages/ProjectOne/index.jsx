@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useState} from "react";
 import { Card, CardContent, Typography } from "@mui/material";
 import HolidazeLogo from '../../../assets/Images/HolidazeLogo.png';
 import ProjectCard from '../../ProjectCard';
@@ -7,6 +7,7 @@ import ProjectStyles from '../../../CSS_Modules/Projects/index.module.css';
 import HolidazeImages from '../../../assets/Images/HolidazeImages.png';
 
 const HolidazeProject = () => {
+    const [hovered, setHovered] = useState(false);
   return (
     <div className="project-container">
          <Card className={ProjectStyles.projectCard}>
@@ -26,13 +27,25 @@ const HolidazeProject = () => {
         </Typography>
         </div>
         <div className={ProjectStyles.projectCardImgDiv}>
-            <img src={HolidazeImages} alt="Holidaze Images" className={ProjectStyles.projectCardImage} />
+            <img src={HolidazeImages} alt="Holidaze Images" className={ProjectStyles.projectCardImage}
+             onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)} />
             </div></div></div>
 
 
 </CardContent>
       </Card>
-
+{hovered && (
+        <div
+          className={ProjectStyles.cardImgDiv}
+        >
+            <img
+            src={HolidazeImages}
+            alt='Holidaze Images'
+            className={ProjectStyles.cardImg}
+          />
+        </div>
+)}
     </div>
   );
 }
