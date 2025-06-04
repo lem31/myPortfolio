@@ -3,7 +3,7 @@ import portfolioStyles from '../../CSS_Modules/Portfolio/index.module.css';
 
 const ProfileCard = () => {
   return (
-<div>
+<div className={portfolioStyles.profileVideoDiv}>
 <video className={portfolioStyles.video} autoPlay muted src={profileVideo} />
 </div>
   );
