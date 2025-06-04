@@ -12,6 +12,7 @@
 
 import { useEffect, useState } from "react";
 import hStyles from "../../CSS_Modules/Header/index.module.css";
+import globStyles from '../../CSS_Modules/Global/index.module.css';
 import Logo from '../../Assets/Images/PortfolioLogo.png';
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -65,13 +66,13 @@ function Header() {
                     </div>
                     <nav className={hStyles.nav}>
                         <div className={hStyles.navDiv}>
-                            <a className={hStyles.navLink} href="/">
+                            <a className={`${hStyles.navLink} ${globStyles.links}`} href="/">
                                 My Portfolio
                             </a>
-                            <a className={hStyles.navLink} href="/About">
+                            <a className={`${hStyles.navLink} ${globStyles.links}`} href="/About">
                                 About
                             </a>
-                            <a className={hStyles.navLink} href="/Contact">
+                            <a className={`${hStyles.navLink} ${globStyles.links}`}href="/Contact">
                                 Contact
                             </a>
                         </div>
@@ -92,17 +93,17 @@ function Header() {
                     >
                         <List className={hStyles.mobileNav}>
                             <ListItem >
-                                <a className={hStyles.navLink} href="/"> My Portfolio</a>
+                                <a className={`${hStyles.navLink} ${globStyles.links}`} href="/"> My Portfolio</a>
 
                             </ListItem>
                             <ListItem >
-                                <a className={hStyles.navLink} href="/About">
+                                <a className={`${hStyles.navLink} ${globStyles.links}`} href="/About">
                                     About
                                 </a>
 
                             </ListItem>
                             <ListItem >
-                                <a className={hStyles.navLink} href="/Contact">
+                                <a className={`${hStyles.navLink} ${globStyles.links}`} href="/Contact">
                                     Contact
                                 </a>
 

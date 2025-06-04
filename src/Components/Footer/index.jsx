@@ -6,7 +6,10 @@
  * @component
  * @returns {JSX.Element} The rendered footer component.
  */
+import React from "react";
 import footerStyles from "../../CSS_Modules/Footer/index.module.css";
+import globStyles from '../../CSS_Modules/Global/index.module.css';
+import githubIcon from "../../Assets/Images/githubIcon.png";
 
 function Footer() {
 
@@ -14,42 +17,35 @@ function Footer() {
     <div className={footerStyles.footerDiv}>
       <footer className={footerStyles.footer}>
         <div className={footerStyles.crDiv}>
-          <p className={footerStyles.copyRight}>© 2025 Leanne Meyer </p>
+          <p className={`${footerStyles.copyRight}${globStyles.links}`}>© 2025 Leanne Meyer </p>
 
         </div>
-
-          <nav className={footerStyles.registerLoginNav}>
-            <div className={footerStyles.Ul}>
-              <a className={footerStyles.footerA}>
-                <img
+        <div className={footerStyles.githubDiv}>
+<a className={footerStyles.githubLink} href="https://github.com/lem31">
+           <img
                   className={footerStyles.navIcons}
+                  src={githubIcon}
 
                 />
+                </a>
+
+                </div>
+
+          <nav className={footerStyles.Nav}>
+            <div className={footerStyles.Ul}>
+              <a className= {globStyles.links}>
+
                About
               </a>
-              <a  className={footerStyles.footerA}>
-                <img
-                  className={footerStyles.navIcons}
+              <a  className={globStyles.links}>
 
-                />
                Contact
               </a>
             </div>
           </nav>
 
 
-        <div className={footerStyles.smIconsDiv}>
-          <img
 
-
-          />
-          <img
-
-          />
-          <img
-
-          />
-        </div>
       </footer>
     </div>
   );

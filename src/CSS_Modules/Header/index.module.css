@@ -15,6 +15,7 @@
     height: 100px;
     border-radius: 40px;
     position: relative;
+    margin-top: 20px;
 }
 
 .headerDiv {
@@ -23,7 +24,7 @@
   width: 100vw;
   justify-content: center;
   position: relative;
-  width: 100%;
+
 
 }
 
@@ -67,12 +68,10 @@ width: 300px;
 
 
 .navLink{
-  color: var(--tertiary-color-2);
-  font-family: var(--font-family);
-    font-size: var(--font-size-small);
+
     font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
+
+
   display: flex;
   flex-direction: row;
  align-items: center;
@@ -81,13 +80,8 @@ background:transparent;
 
 }
 
-.navLink:hover {
-  color: var(--tertiary-color);
-}
 
-.navLink:active {
-    transform: scale(1.1);
-}
+
 
 .hamburgerButton {
     display: none;
@@ -129,3 +123,12 @@ background:transparent;
 .mobileNavDiv.active {
     display: block;
   }}
+
+  @media (max-width: 486px){
+
+.header{
+
+    width: 80vw;
+
+}
+  }
