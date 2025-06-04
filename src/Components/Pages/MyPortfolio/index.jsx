@@ -1,15 +1,17 @@
 import ProjectCard from "../../ProjectCard";
 import HolidazeMainImage from "../../../assets/Images/HolidazeMainImage.jpg";
+import StoreMainImage from "../../../assets/Images/StoreMainImg.png";
+import AuctionMainImage from "../../../assets/Images/AuctionAppMainImg.png";
 
 const projects = [
   { title: "Holidaze App", image: HolidazeMainImage, link: "/ProjectOne" },
-  { title: "Project 2", image: "/images/project2.jpg", link: "/ProjectTwo" },
-   { title: "Project 2", image: "/images/project3.jpg", link: "/ProjectThree" },
+  { title: "Store App", image: StoreMainImage, link: "/ProjectTwo" },
+   { title: "Auction App", image: AuctionMainImage, link: "/ProjectThree" },
 ];
 
 const PortfolioPage = () => {
   return (
-    <div style={{ display: "flex", flexDirection: 'row', gap: "20px", justifyContent: "center", width: "100%", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexDirection: 'row', gap: "20px", justifyContent: "center", width: "100%", maxWidth:'1260px', flexWrap: 'wrap', paddingTop: "120px", margin:'0 auto' }}>
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
