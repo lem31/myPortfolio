@@ -1,48 +1,61 @@
 import React from "react";
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import portfolioStyles from "../../CSS_Modules/Portfolio/index.module.css";
 
 const ProjectCard = ({ title, image, link }) => {
   const navigate = useNavigate();
 
-return (
-    <Card
+  return (
+    <div className={portfolioStyles.cardContainer}>
+      <Card
         sx={{
-          width: 300,
+          width: 400,
+          maxHeight: 600,
+
           border: "1px solid #ccc",
           cursor: "pointer",
-          scale: 1.5,
-          transition: "transform 0.3s ease-in-out",
-          "&:hover": { transform: "scale(1.05)" },
-          m: 10
+          overflow: "visible",
+          position: "relative",
+
+
         }}
         onClick={() => navigate(link)}
-    >
-        <CardMedia
+      >
+        <div className={portfolioStyles.cardMediaDiv}>
+          <CardMedia
             component="img"
             image={image}
             alt={title}
             sx={{
-                maxWidth: 300,
-                maxHeight: 200,
-                objectFit: "cover",
-                margin: "0 auto",
-                transition: "transform 0.3s ease-in-out",
-               "&:hover": {
-        width: "180px",
-        height: "150px",
-        transform: "scale(1.8)",
-        marginTop: "50px",
-    },
+              width: "100%",
+              height: "100%",
 
-                display: "block"
+
+
+
+              objectFit: "contain",
+              margin: "0 auto",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+left: 20,
+top: 20,
+
+                transform: "scale(1.8) ",
+                position: "absolute",
+                  zIndex: 100,
+              },
+
+              display: "block",
             }}
-        />
+          />{" "}
+        </div>
         <CardContent>
-            <Typography variant="h6">{title}</Typography>
+          <Typography variant="h6">{title}</Typography>
         </CardContent>
-    </Card>
-);
+      </Card>
+    </div>
+  );
 };
 
 export default ProjectCard;

@@ -9,7 +9,7 @@ const projects = [
 
 const PortfolioPage = () => {
   return (
-    <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
+    <div style={{ display: "flex", flexDirection: 'row', gap: "20px", justifyContent: "center", width: "100%", flexWrap: "wrap" }}>
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
