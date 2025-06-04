@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import portfolioStyles from "../../CSS_Modules/Portfolio/index.module.css";
+import globStyles from "../../CSS_Modules/Global/index.module.css";
 
 const ProjectCard = ({ title, image, link }) => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const ProjectCard = ({ title, image, link }) => {
         />{" "}
       </div>
       <CardContent>
-        <Typography variant="h6">{title}</Typography>
+        <Typography className={globStyles.h2} sx={{fontWeight:'500'}} >{title}</Typography>
       </CardContent>
     </Card>
 {hovered && (

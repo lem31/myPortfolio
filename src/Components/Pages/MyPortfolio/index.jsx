@@ -4,6 +4,7 @@ import StoreMainImage from "../../../assets/Images/StoreMainImg.png";
 import AuctionMainImage from "../../../assets/Images/AuctionAppMainImg.png";
 import ProfileCard from "../../ProfileCard";
 import portfolioStyles from "../../../CSS_Modules/Portfolio/index.module.css";
+import globStyles from "../../../CSS_Modules/Global/index.module.css";
 
 const projects = [
   { title: "Holidaze App", image: HolidazeMainImage, link: "/ProjectOne" },
@@ -18,9 +19,9 @@ const PortfolioPage = () => {
     <ProfileCard />
 
 <div className={portfolioStyles.portfolioTitleDiv}>
-    <h1 className={portfolioStyles.portfolioTitle}>Portfolio</h1>
+    <h1 className={globStyles.h1}>Portfolio</h1>
 
- <p> Welcome to my portfolio! Here, you can explore some of the projects I've worked on.
+ <p className={globStyles.body}> Welcome to my portfolio! Here, you can explore some of the projects I've worked on.
     Each project showcases my skills and creativity as a developer.
     Click on any project card title to learn more about it.</p>
     </div>
