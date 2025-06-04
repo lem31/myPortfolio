@@ -51,32 +51,12 @@ justifyContent: "center",
     </Card>
 {hovered && (
         <div
-          style={{
-            position: "fixed",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: 1000,
-            width: "50vw",
-            height: "auto",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            padding: "20px",
-            borderRadius: "10px",
-             pointerEvents: "none",
-          }}
+          className={portfolioStyles.cardImgDiv}
         >
             <img
             src={image}
             alt={title}
-            style={{
-              width: "100%",
-              height: "auto",
-              objectFit: "contain",
-              transition: "transform 0.3s ease-in-out",
-            }}
+            className={portfolioStyles.cardImg}
           />
         </div>
 )}
