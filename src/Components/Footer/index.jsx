@@ -9,7 +9,7 @@
 import React from "react";
 import footerStyles from "../../CSS_Modules/Footer/index.module.css";
 import globStyles from '../../CSS_Modules/Global/index.module.css';
-import githubIcon from "../../Assets/Images/githubIcon.png";
+import githubIcon from "../../assets/Images/githubIcon.png";
 
 function Footer() {
 
