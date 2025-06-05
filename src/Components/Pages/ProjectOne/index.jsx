@@ -1,6 +1,8 @@
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 import HolidazeLogo from "../../../assets/Images/HolidazeLogo.png";
 import HolidazeImages from "../../../assets/Images/HolidazeImages.png";
+import MainImage from "../../../assets/Images/MainImageHolidaze.png";
+import globStyles from "../../../CSS_Modules/Global/index.module.css";
 
 const HolidazeProject = () => {
   const title = "Holidaze App";
@@ -12,6 +14,7 @@ const HolidazeProject = () => {
   const cardImg = HolidazeImages;
   const techStack = " React, Vite, Zustand, MUI, Emotion, CSS Modules, React Hook Form, React Router DOM, Yup, Node.js ";
   return (
+    <div>
     <ProjectPageCard
       title={title}
 
@@ -23,6 +26,24 @@ const HolidazeProject = () => {
       Additional={Additional}
 
     />
+    <div>
+      <img
+        src={MainImage}
+        alt="Holidaze Main"
+        style={{
+          width: "100%",
+          height: "auto",
+          maxWidth: "1260px",
+          margin: "20px auto",
+          display: "block",
+        }}
+      />
+    </div>
+
+    <div>
+      <h2 className={globStyles.h2}>Project Improvements and Updates</h2>
+    </div>
+    </div>
   );
 };
 export default HolidazeProject;

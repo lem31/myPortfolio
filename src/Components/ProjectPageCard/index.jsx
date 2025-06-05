@@ -72,20 +72,20 @@ const ProjectPageCard = ({
             </div>
             <div className={ProjectStyles.TextImageDiv}>
               <div className={ProjectStyles.projectCardDescription}>
-                 <h2 className={globStyles.h2}>Function</h2>
+
                 <Typography className={globStyles.body}  component="div">
-
-                  {functionText}
+ <h2 style={{ margin: 0 }} className={globStyles.h2}>Function</h2>
+                 <p className={globStyles.body}> {functionText}</p>
                 </Typography>
-                  <h3 className={globStyles.h3}>User Stories</h3>
-                <Typography className={globStyles.body}  component="div">
 
-                  {usersText}
+                <Typography   component="div">
+<h3 style={{ margin: 0 }} className={globStyles.h3}>User Stories</h3>
+                 <p className={globStyles.body}> {usersText}</p>
                 </Typography>
-                 <h3 className={globStyles.h3}>Additional Details</h3>
-                <Typography className={globStyles.body} component="div">
 
-                  {Additional}
+                <Typography   className={globStyles.body} component="div">
+<h3  style={{ margin: 0 }}  className={globStyles.h3}>Additional Details</h3>
+                 <p    className={globStyles.body}>{Additional}</p>
                 </Typography>
 
               </div>
