@@ -12,19 +12,6 @@
 <img src="src/assets/Images/PortfolioVid.gif" alt="Video Demo">
 
 
-Or, using standard markdown image syntax:
-
-
-![Video Demo](src/assets/Images/PortfolioVid.gif)
-
-
-
-
-<img src="src/assets/Images/PortfolioVid.gif" alt="Video Demo">
-
-
-
-
 
 <h2> 🖼 <strong> Overview </strong> </h2> <br>
 
