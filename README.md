@@ -8,7 +8,7 @@
 
 
 
-<img src="https://i.ibb.co/WpgJZgmD/My-Portfolio-Video.gif" alt="Video Demo">
+<img src="https://i.ibb.co/hJfWZF3q/Portfolio-Vid-gif.gif" alt="Video Demo">
 
 
 
