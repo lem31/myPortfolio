@@ -23,7 +23,7 @@ cursor: pointer !important;
 
 .links:active {
 
-    transform: scale(1.1) !important;
+    transform: scale(1) !important;
 }
 .h1{
     font-size: var(--font-size-large) ;
