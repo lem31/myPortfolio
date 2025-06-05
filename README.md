@@ -30,9 +30,9 @@ MyPortfolio is a modern web application built with **React, Vite, and Material-U
     </tr>
     <tr>
         <td>Uses Vite for lightning-fast builds. </td>
-        <td>Integrates `@emotion/react` and `@emotion/styled` for flexible styling.</td>
-        <td>Powered by `react-router-dom` for smooth navigation.</td>
-        <td>Implements `toastr` for user-friendly alerts.</td>
+        <td>Integrates @emotion/react and @emotion/styled for flexible styling.</td>
+        <td>Powered by react-router-dom for smooth navigation.</td>
+        <td>Implements toastr for user-friendly alerts.</td>
     </tr>
 </table>
 
