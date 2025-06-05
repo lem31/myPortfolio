@@ -8,8 +8,8 @@
 
 
 
-<img src="https://i.ibb.co/WpgJZgmD/My-Portfolio-Video.gif" alt="Video Demo">
 
+<img src="src/assets/Images/PortfolioVid.gif" alt="Video Demo">
 
 
 
@@ -23,16 +23,15 @@ MyPortfolio is a modern web application built with **React, Vite, and Material-U
 <table>
     <tr>
         <th><strong>🏎️ <h4>Fast & Efficient</h4></strong></th>
-        <strong>🎨 <h4>Styled Components</h4></strong></th>
+        <th><strong>🎨 <h4>Styled Components</h4></strong></th>
         <th><strong>🛣️ <h4>Routing</h4></strong></th>
         <th><strong>🔔 <h4>Notifications</h4></strong></th>
-
     </tr>
     <tr>
         <td>Uses Vite for lightning-fast builds. </td>
-        <td>Integrates `@emotion/react` and `@emotion/styled` for flexible styling.</td>
-        <td>Powered by `react-router-dom` for smooth navigation.</td>
-        <td>Implements `toastr` for user-friendly alerts.</td>
+        <td>Integrates @emotion/react and @emotion/styled for flexible styling.</td>
+        <td>Powered by react-router-dom for smooth navigation.</td>
+        <td>Implements toastr for user-friendly alerts.</td>
     </tr>
 </table>
 
