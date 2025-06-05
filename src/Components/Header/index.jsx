@@ -13,7 +13,7 @@
 import { useEffect, useState } from "react";
 import hStyles from "../../CSS_Modules/Header/index.module.css";
 import globStyles from '../../CSS_Modules/Global/index.module.css';
-import Logo from '../../Assets/Images/PortfolioLogo.png';
+import Logo from '../../assets/Images/PortfolioLogo.png';
 
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
