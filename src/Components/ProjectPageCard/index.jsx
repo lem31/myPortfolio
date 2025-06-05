@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { Card, CardContent, Typography, IconButton } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
+import Link from '@mui/material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+
+
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import ProjectStyles from "../../CSS_Modules/Projects/index.module.css";
 import globStyles from "../../CSS_Modules/Global/index.module.css";
@@ -111,6 +116,18 @@ const ProjectPageCard = ({
                     {techStack}{" "}
                   </p>
                 </Typography>
+                    <div>
+
+      <Link href="https://holidaze-lem.netlify.app/" target="_blank" rel="noopener noreferrer">
+      <RocketLaunchIcon fontSize="large" />
+        Visit Live Site
+      </Link>
+
+
+      <Link href="https://github.com/lem31/Holidaze-PE2/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+       <GitHubIcon fontSize="large" />  View GitHub README
+      </Link>
+    </div>
               </div>
             </div>
           </div>

@@ -110,6 +110,7 @@
     box-shadow: 0 0 40px 10px var(--secondary-color-2), 0 0 0 4px rgba(0,0,0,0.2);
 }
 
-.shareIcon{
-  color: var(--tertiary-color-2);
+.shareIcon, .copyIcon{
+  color: var(--secondary-color-3) !important;
 }
+
