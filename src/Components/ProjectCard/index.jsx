@@ -24,7 +24,7 @@ const ProjectCard = ({ title, image, link, description }) => {
     <>
       <Card
         className={portfolioStyles.projectCard}
-        onClick={() => navigate(link)}
+        onClick={() => { navigate(link); window.scrollTo(0, 0);}}
       >
         <div className={portfolioStyles.cardMediaDiv}>
           <CardMedia
