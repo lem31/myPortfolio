@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Card, CardContent, Typography, IconButton } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import Link from '@mui/material/Link';
@@ -85,7 +85,7 @@ const ProjectPageCard = ({
 
                 <Typography   className={globStyles.body} component="div">
 <h3  style={{ margin: 0 }}  className={globStyles.h3}>Additional Details</h3>
-                 <p    className={globStyles.body}>{Additional}</p>
+                 <p   className={globStyles.body}>{Additional}</p>
                 </Typography>
 
               </div>

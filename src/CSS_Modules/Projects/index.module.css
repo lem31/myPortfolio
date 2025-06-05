@@ -114,3 +114,80 @@
   color: var(--secondary-color-3) !important;
 }
 
+.projectPageTextDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.projectPageMainImageDiv{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 0;}
+
+.projectPageMainImage{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.projectPageMsgImg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+scale: 1.5;
+
+
+}
+
+.projectPageMsgImgDiv{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+padding: 20px;
+  position: relative;
+}
+
+.projectPageMsgImgDivBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.Ul{
+  margin:0;
+  width: 100%;
+ max-width: 600px;
+
+}
+
+.text{
+  text-align: left;
+}
+
+
+@media (max-width: 486px){
+  .Ul{
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 487px) and (max-width: 768px){
+  .Ul{
+    max-width: 400px;
+  }
+}
+

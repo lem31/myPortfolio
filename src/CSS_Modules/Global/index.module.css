@@ -55,15 +55,18 @@ cursor: pointer !important;
     }
 
     .h1 {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-medium) !important;
+
     }
 
     .h2 {
         font-size: var(--font-size-medium-2) !important;
+
     }
 
     .h3 {
         font-size: var(--font-size-small-2) !important;
+
     }
 
 
