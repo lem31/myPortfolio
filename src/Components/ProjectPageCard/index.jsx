@@ -1,58 +1,132 @@
+import React, { useState } from "react";
+import { Card, CardContent, Typography, IconButton } from "@mui/material";
+import ShareIcon from "@mui/icons-material/Share";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import ProjectStyles from "../../CSS_Modules/Projects/index.module.css";
+import globStyles from "../../CSS_Modules/Global/index.module.css";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
-import React, {useState} from "react";
-import { Card, CardContent, Typography } from "@mui/material";
-import ShareIcon from '@mui/icons-material/Share';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-import ProjectStyles from '../../CSS_Modules/Projects/index.module.css';
-import globStyles from '../../CSS_Modules/Global/index.module.css';
+const ProjectPageCard = ({
+  logoimg,
+  title,
+  functionText,
+  usersText,
+  cardImg,
+  techStack,
+  Additional,
+}) => {
+  const [hovered, setHovered] = useState(false);
 
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+  };
 
-const ProjectPageCard = ({ logoimg, title, description, cardImg, techStack }) => {
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "Check this out!",
+          url: window.location.href,
+        })
+        .then(() => {
+          toastr.success("Link shared successfully!");
+        })
+        .catch((error) => {
+          toastr.error("Oops! Something went wrong while sharing.");
+        });
+    } else {
+      toastr.warning("Sharing is not supported on this browser.");
+    }
+  };
 
-        const [hovered, setHovered] = useState(false);
   return (
     <div className="project-container">
-         <Card className={ProjectStyles.projectCard}>
-            <CardContent className={ProjectStyles.projectCardContent}>
-                <div className={ProjectStyles.projectCardTextDiv}>
-        <div className={ProjectStyles.logoH1Div}>
-        <img src={logoimg} alt="Holidaze Logo" className={ProjectStyles.HolidazeLogo} />
-          <h1 className={globStyles.h1}>{title}</h1>
-        </div>
-        <div className={ProjectStyles.TextImageDiv}>
-            <div className={ProjectStyles.projectCardDescription}>
-        <Typography variant="body1" className={ProjectStyles.p}>
-         {description}
-        </Typography>
+      <Card className={ProjectStyles.projectCard}>
+        <CardContent className={ProjectStyles.projectCardContent}>
+          <div className={ProjectStyles.projectCardTextDiv}>
+            <div className={ProjectStyles.logoH1Div}>
+              <img
+                src={logoimg}
+                alt="Holidaze Logo"
+                className={ProjectStyles.HolidazeLogo}
+              />
+              <h1 className={globStyles.h1}>{title}</h1>
+              <IconButton
+                onClick={handleShare}
+                className={ProjectStyles.shareIcon}
+              >
+                <ShareIcon className={ProjectStyles.shareIcon}/>
+              </IconButton>
+              <IconButton
+                onClick={handleCopyLink}
+                className={ProjectStyles.copyIcon}
+              >
+                <ContentCopyIcon />
+              </IconButton>
+            </div>
+            <div className={ProjectStyles.TextImageDiv}>
+              <div className={ProjectStyles.projectCardDescription}>
+                 <h2 className={globStyles.h2}>Function</h2>
+                <Typography className={globStyles.body}  component="div">
 
-        </div>
-        <div className={ProjectStyles.projectCardImgDiv}>
-            <img src={cardImg} alt="Holidaze Images" className={ProjectStyles.projectCardImage}
-             onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)} />
+                  {functionText}
+                </Typography>
+                  <h3 className={globStyles.h3}>User Stories</h3>
+                <Typography className={globStyles.body}  component="div">
 
-        <Typography variant="body2" className="project-tech-stack">
-              <h2 className={globStyles.h2}>Tech Stack</h2>
- <p className={globStyles.body}> {techStack} </p>
-        </Typography>
-            </div></div></div>
+                  {usersText}
+                </Typography>
+                 <h3 className={globStyles.h3}>Additional Details</h3>
+                <Typography className={globStyles.body} component="div">
 
+                  {Additional}
+                </Typography>
 
-</CardContent>
+              </div>
+              <div className={ProjectStyles.projectCardImgDiv}>
+                <img
+                  src={cardImg}
+                  alt="Holidaze Images"
+                  className={ProjectStyles.projectCardImage}
+                  onMouseEnter={() => setHovered(true)}
+                  onMouseLeave={() => setHovered(false)}
+                />
+
+                <Typography
+                  variant="div"
+                  className="project-tech-stack"
+                >
+                  <h3
+                    sx={{ m: 0 }}
+                    className={globStyles.h3}
+                  >
+                    Tech Stack
+                  </h3>
+                  <p
+                    sx={{ m: 0 }}
+                    className={globStyles.body}
+                  >
+                    {" "}
+                    {techStack}{" "}
+                  </p>
+                </Typography>
+              </div>
+            </div>
+          </div>
+        </CardContent>
       </Card>
-{hovered && (
-        <div
-          className={ProjectStyles.cardImgDiv}
-        >
-            <img
+      {hovered && (
+        <div className={ProjectStyles.cardImgDiv}>
+          <img
             src={cardImg}
-            alt='Holidaze Images'
+            alt="Holidaze Images"
             className={ProjectStyles.cardImg}
           />
         </div>
-)}
+      )}
     </div>
   );
-}
+};
 
 export default ProjectPageCard;

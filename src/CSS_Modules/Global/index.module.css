@@ -41,6 +41,14 @@ cursor: pointer !important;
     letter-spacing: 0.5% !important;
 }
 
+.h3{
+    font-size: var(--font-size-medium-2) !important;
+    color: var(--tertiary-color-2) !important;
+    font-family: var(--font-family ) !important;
+    line-height: 150% !important;
+    letter-spacing: 0.5% !important;
+}
+
 @media (min-width: 487px) and (max-width: 768px) {
     .body {
         font-size: var(--font-size-small-2);
@@ -52,6 +60,10 @@ cursor: pointer !important;
 
     .h2 {
         font-size: var(--font-size-medium-2) !important;
+    }
+
+    .h3 {
+        font-size: var(--font-size-small-2) !important;
     }
 
 
@@ -73,5 +85,9 @@ cursor: pointer !important;
 
     .h2 {
         font-size: var(--font-size-small-2) !important;
+    }
+
+    .h3 {
+        font-size: var(--font-size-tiny) !important;
     }
 }

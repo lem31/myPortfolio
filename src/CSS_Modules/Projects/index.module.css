@@ -1,5 +1,5 @@
 .projectCard {
-  width: 80vw;
+  width: 90vw;
   height:  100%;
   padding: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -108,4 +108,8 @@
     border: none;
 
     box-shadow: 0 0 40px 10px var(--secondary-color-2), 0 0 0 4px rgba(0,0,0,0.2);
+}
+
+.shareIcon{
+  color: var(--tertiary-color-2);
 }
