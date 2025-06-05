@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import { Card, CardContent, Typography } from "@mui/material";
 import ProjectStyles from '../../CSS_Modules/Projects/index.module.css';
+import globStyles from '../../CSS_Modules/Global/index.module.css';
 
 
 const ProjectPageCard = ({ logoimg, title, description, cardImg, techStack }) => {
@@ -14,15 +15,17 @@ const ProjectPageCard = ({ logoimg, title, description, cardImg, techStack }) =>
                 <div className={ProjectStyles.projectCardTextDiv}>
         <div className={ProjectStyles.logoH1Div}>
         <img src={logoimg} alt="Holidaze Logo" className={ProjectStyles.HolidazeLogo} />
-          <h1>{title}</h1>
+          <h1 className={globStyles.h1}>{title}</h1>
         </div>
         <div className={ProjectStyles.TextImageDiv}>
             <div className={ProjectStyles.projectCardDescription}>
         <Typography variant="body1" className={ProjectStyles.p}>
          {description}
         </Typography>
+
         <Typography variant="body2" className="project-tech-stack">
-   {techStack}
+              <h2 className={globStyles.h2}>Tech Stack</h2>
+ <p className={globStyles.body}> {techStack} </p>
         </Typography>
         </div>
         <div className={ProjectStyles.projectCardImgDiv}>
