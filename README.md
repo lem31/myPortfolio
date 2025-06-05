@@ -8,7 +8,20 @@
 
 
 
-<img src="../myPortfolio/src/assets/Images/PortfolioVid.gif" alt="Video Demo">
+
+<img src="src/assets/Images/PortfolioVid.gif" alt="Video Demo">
+
+
+Or, using standard markdown image syntax:
+
+
+![Video Demo](src/assets/Images/PortfolioVid.gif)
+
+
+
+
+<img src="src/assets/Images/PortfolioVid.gif" alt="Video Demo">
+
 
 
 
