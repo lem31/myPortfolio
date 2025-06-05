@@ -1,10 +1,31 @@
-import  { useState } from "react";
-import { Card, CardContent, Typography, IconButton, Button } from "@mui/material";
+/**
+ * ProjectPageCard component displays detailed information about a project,
+ * including logo, title, description, user stories, tech stack, and additional details.
+ * It provides options to share or copy the project link, and buttons to visit the live site or view the GitHub README.
+ *
+ * @component
+ * @param {Object} props - Component props
+ * @param {string} props.logoimg - URL of the project's logo image
+ * @param {string} props.title - Title of the project
+ * @param {string} props.functionText - Description of the project's functionality
+ * @param {string} props.usersText - User stories or use cases for the project
+ * @param {string} props.cardImg - URL of the project's main image
+ * @param {string} props.techStack - Technologies used in the project
+ * @param {string} props.Additional - Additional details about the project
+ * @returns {JSX.Element} The rendered ProjectPageCard component
+ */
+import { useState } from "react";
+import {
+  Card,
+  CardContent,
+  Typography,
+  IconButton,
+  Button,
+} from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
-import Link from '@mui/material/Link';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-
+import Link from "@mui/material/Link";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import ProjectStyles from "../../CSS_Modules/Projects/index.module.css";
@@ -61,7 +82,7 @@ const ProjectPageCard = ({
                 onClick={handleShare}
                 className={ProjectStyles.shareIcon}
               >
-                <ShareIcon className={ProjectStyles.shareIcon}/>
+                <ShareIcon className={ProjectStyles.shareIcon} />
               </IconButton>
               <IconButton
                 onClick={handleCopyLink}
@@ -72,22 +93,41 @@ const ProjectPageCard = ({
             </div>
             <div className={ProjectStyles.TextImageDiv}>
               <div className={ProjectStyles.projectCardDescription}>
-
-                <Typography className={globStyles.body}  component="div">
- <h2 style={{ margin: 0 }} className={globStyles.h2}>Function</h2>
-                 <p className={globStyles.body}> {functionText}</p>
+                <Typography
+                  className={globStyles.body}
+                  component="div"
+                >
+                  <h2
+                    style={{ margin: 0 }}
+                    className={globStyles.h2}
+                  >
+                    Function
+                  </h2>
+                  <p className={globStyles.body}> {functionText}</p>
                 </Typography>
 
-                <Typography   component="div">
-<h3 style={{ margin: 0 }} className={globStyles.h3}>User Stories</h3>
-                 <p className={globStyles.body}> {usersText}</p>
+                <Typography component="div">
+                  <h3
+                    style={{ margin: 0 }}
+                    className={globStyles.h3}
+                  >
+                    User Stories
+                  </h3>
+                  <p className={globStyles.body}> {usersText}</p>
                 </Typography>
 
-                <Typography   className={globStyles.body} component="div">
-<h3  style={{ margin: 0 }}  className={globStyles.h3}>Additional Details</h3>
-                 <p   className={globStyles.body}>{Additional}</p>
+                <Typography
+                  className={globStyles.body}
+                  component="div"
+                >
+                  <h3
+                    style={{ margin: 0 }}
+                    className={globStyles.h3}
+                  >
+                    Additional Details
+                  </h3>
+                  <p className={globStyles.body}>{Additional}</p>
                 </Typography>
-
               </div>
               <div className={ProjectStyles.projectCardImgDiv}>
                 <img
@@ -116,20 +156,37 @@ const ProjectPageCard = ({
                     {techStack}{" "}
                   </p>
                 </Typography>
-                    <div className={ProjectStyles.projectPageButtonsDiv}>
-<Button className={ProjectStyles.projectPageButton}>
-      <Link className={globStyles.links} href="https://holidaze-lem.netlify.app/" target="_blank" rel="noopener noreferrer">
-      <RocketLaunchIcon className={ProjectStyles.rocketIcon} fontSize="large" />
-        Visit Live Site
-      </Link>
-      </Button>
+                <div className={ProjectStyles.projectPageButtonsDiv}>
+                  <Button className={ProjectStyles.projectPageButton}>
+                    <Link
+                      className={globStyles.links}
+                      href="https://holidaze-lem.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RocketLaunchIcon
+                        className={ProjectStyles.rocketIcon}
+                        fontSize="large"
+                      />
+                      Visit Live Site
+                    </Link>
+                  </Button>
 
-<Button className={ProjectStyles.projectPageButton}>
-      <Link className={globStyles.links} href="https://github.com/lem31/Holidaze-PE2/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-       <GitHubIcon className={ProjectStyles.githubIcon} fontSize="large" />  View GitHub README
-      </Link>
-      </Button>
-    </div>
+                  <Button className={ProjectStyles.projectPageButton}>
+                    <Link
+                      className={globStyles.links}
+                      href="https://github.com/lem31/Holidaze-PE2/blob/main/README.md"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon
+                        className={ProjectStyles.githubIcon}
+                        fontSize="large"
+                      />{" "}
+                      View GitHub README
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
