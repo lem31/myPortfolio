@@ -1,3 +1,12 @@
+
+
+/**
+ * PortfolioPage component displays a portfolio section with a profile card and a list of project cards.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered portfolio page with profile and project cards.
+ */
+
 import ProjectCard from "../../ProjectCard";
 import HolidazeMainImage from "../../../assets/Images/HolidazeMainImage.jpg";
 import StoreMainImage from "../../../assets/Images/StoreMainImg.png";
