@@ -7,9 +7,10 @@ import portfolioStyles from "../../../CSS_Modules/Portfolio/index.module.css";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 
 const projects = [
-  { title: "Holidaze App", image: HolidazeMainImage, link: "/ProjectOne" },
-  { title: "Store App", image: StoreMainImage, link: "/ProjectTwo" },
-   { title: "Auction App", image: AuctionMainImage, link: "/ProjectThree" },
+  { title: "Holidaze App", image: HolidazeMainImage, link: "/ProjectOne", description: "Browse and book holiday stays with ease. Built for seamless travel planning." },
+  { title: "Store App", image: StoreMainImage, link: "/ProjectTwo", description: "A sleek e-commerce hub for shopping lovers. Discover products & shop effortlessly" },
+  { title: "Auction App", image: AuctionMainImage, link: "/ProjectThree", description:
+"Place your bids or create your own auction listing and instantly embrace the rush of live auctions." },
 ];
 
 const PortfolioPage = () => {
