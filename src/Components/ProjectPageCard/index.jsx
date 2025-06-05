@@ -1,6 +1,8 @@
 
 import React, {useState} from "react";
 import { Card, CardContent, Typography } from "@mui/material";
+import ShareIcon from '@mui/icons-material/Share';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import ProjectStyles from '../../CSS_Modules/Projects/index.module.css';
 import globStyles from '../../CSS_Modules/Global/index.module.css';
 
@@ -23,15 +25,16 @@ const ProjectPageCard = ({ logoimg, title, description, cardImg, techStack }) =>
          {description}
         </Typography>
 
-        <Typography variant="body2" className="project-tech-stack">
-              <h2 className={globStyles.h2}>Tech Stack</h2>
- <p className={globStyles.body}> {techStack} </p>
-        </Typography>
         </div>
         <div className={ProjectStyles.projectCardImgDiv}>
             <img src={cardImg} alt="Holidaze Images" className={ProjectStyles.projectCardImage}
              onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)} />
+
+        <Typography variant="body2" className="project-tech-stack">
+              <h2 className={globStyles.h2}>Tech Stack</h2>
+ <p className={globStyles.body}> {techStack} </p>
+        </Typography>
             </div></div></div>
 
 
