@@ -7,8 +7,8 @@
  */
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 
-import EasyBuyImages from "../../../assets/Images/EasyBuyImages.png";
-import MainImage from "../../../assets/Images/EasyBuyMainImg.png";
+import AuctionAppImages from "../../../assets/Images/AuctionAppImages.png";
+import MainImage from "../../../assets/Images/AuctionAppImgMain.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
 import AuctionAppLogo from "../../../assets/Images/AuctionAppLogo.png";
@@ -25,7 +25,7 @@ const ArtAuctionApp = () => {
   const usersText =
     "All users can browse Auction listings, view more information on listings and register. Registered users can login, view their profile with an Avatar image, banner image, number of coins they have left to spend and their username. They can also update their profile, create, edit or delete listings, view all their listings and view all bids they've made. They can place bids and view any bids made on listings and the highest current bid, so that they know how much to bid.";
   const Additional =
-    "The app is responsive and also features a search bar and categories, users can select to filter listings";
+    "The app is responsive on different screen sizes and also features a search bar and categories, users can select to filter listings";
   const logoimg = AuctionAppLogo;
   const cardImg = AuctionAppImages;
   const techStack =
