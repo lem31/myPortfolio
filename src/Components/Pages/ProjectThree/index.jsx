@@ -12,10 +12,8 @@ import MainImage from "../../../assets/Images/AuctionAppImgMain.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
 import AuctionAppLogo from "../../../assets/Images/AuctionAppLogo.png";
-import activeGif from "../../../assets/Images/ActiveStateVid.mov.gif";
-import popoutGif from "../../../assets/Images/ShoppingPopoutVid.mov.gif";
-import headerVid from "../../../assets/Videos/FixedHeaderVid.mov.mp4";
-import favImg from "../../../assets/Images/EasyBuyFavImg.png";
+import BidBoxVid from "../../../assets/Videos/BidBoxVid.mov";
+import msgImg from "../../../assets/Images/msgImgAuctionApp.png";
 
 
 const ArtAuctionApp = () => {
@@ -94,6 +92,17 @@ const ArtAuctionApp = () => {
             <p>Fixed view bids box display on listing page and home page, so that it displays just below the view bids button.</p>
           </li>
 
+          <div className={ProjectStyles.bidVideoDiv}>
+            <video
+              className={ProjectStyles.bidVideo}
+              src={BidBoxVid}
+              autoPlay
+              loop
+              muted
+              controls
+            />
+            </div>
+
           <li>
             <p>Added highest bid to all listings, so users no where to start bidding from.</p>
           </li>
@@ -102,6 +111,9 @@ const ArtAuctionApp = () => {
             <p>Updated notifications using toaster.</p>
 
           </li>
+          <div className={ProjectStyles.msgImgDiv}>
+            <img src={msgImg} alt="Auction App Notifications" className={ProjectStyles.msgImg} />
+            </div>
 
            <li>
             <p>Should add testing.</p>

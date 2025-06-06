@@ -7,7 +7,7 @@
  */
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 
-import EasyBuyImages from "../../../assets/Images/EasyBuyImages.png";
+import EasyBuyImages from "../../../assets/Images/StoreAppImages.png";
 import MainImage from "../../../assets/Images/EasyBuyMainImg.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
