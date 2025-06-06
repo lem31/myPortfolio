@@ -50,7 +50,7 @@
   margin: 0 auto !important;
   transition: transform 0.3s ease-in-out !important;
 
-  display: block  !important;
+  display: block !important;
 }
 
 .video {
@@ -127,24 +127,19 @@
   margin-top: 20px;
 }
 
-@media (max-width: 486px){
-  .video{
+@media (max-width: 486px) {
+  .video {
     width: 250px;
     height: 250px;
   }
   .cardMediaDiv {
-  width: 220px;
-  height: 120px;
- min-width: 100px;
-}
+    width: 220px;
+    height: 120px;
+    min-width: 100px;
+  }
 
-
-.projectCard {
-  width: 250px;
-  max-height: 300px;
-
-}
-
-
-
+  .projectCard {
+    width: 250px;
+    max-height: 300px;
+  }
 }
