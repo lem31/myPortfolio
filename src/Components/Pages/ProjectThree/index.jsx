@@ -67,12 +67,17 @@ const ArtAuctionApp = () => {
           <li className={ProjectStyles.li}>
             {" "}
             <p>
-             Cleaned up the code by formatting it properly, removing unnecessary fragments, unused variables, console logs etc.
+           Standardised error handling and removed all alerts.
             </p>
           </li>
             <li className={ProjectStyles.li}>
             <p>
-              Added any missing JSDocs and ensured all React keys are stable and unique.
+             Added request caching to some functions to improve performance.
+            </p>
+            </li>
+            <li className={ProjectStyles.li}>
+            <p>
+             Tried to make the design more appealing and more responsive by modifying the header and centering some text which looked out of place. The search bar and categories were previously in the body but are now in the header and I created a select box for the categories on smaller screens. I also modified the layout of the auction listings by moving the images to the top of the card instead of to the side.
             </p>
             </li>
         </ul>
@@ -86,30 +91,24 @@ const ArtAuctionApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Added an active state to all buttons</p>
+            <p>Fixed view bids box display on listing page and home page, so that it displays just below the view bids button.</p>
           </li>
-           <div className={ProjectStyles.imgDiv}>
-          <img src={activeGif} alt="Active button" />
-            </div>
-          <li>
-            <p>Added a popout effect to shopping cart button to make it more interactive</p>
-          </li>
-           <div className={ProjectStyles.imgDiv}>
-          <img src={popoutGif} alt="Popout shopping cart" />
-            </div>
-          <li>
-            <p>Added a favorites bar and favorite buttons to all listings.</p>
-            <div className={ProjectStyles.imgDiv}>
-            <img src={favImg} alt="EasyBuy favorite Buttons and bar" />
 
-            </div>
-          </li>
           <li>
-            <p>Changed header to a fixed header </p>
+            <p>Added highest bid to all listings, so users no where to start bidding from.</p>
           </li>
-           <div className={ProjectStyles.imgDiv}>
-          <video src={headerVid} controls></video>
-           </div>
+
+          <li>
+            <p>Updated notifications using toaster.</p>
+
+          </li>
+
+           <li>
+            <p>Should add testing.</p>
+
+          </li>
+
+
 
         </ul>
         <h3
@@ -120,7 +119,7 @@ const ArtAuctionApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Learning how to use Zustand and getting data to display correctly when setting and retrieving data from the store. </p>
+            <p>Learning how to use tailwind effectively. </p>
           </li>
 
         </ul>
@@ -132,17 +131,22 @@ const ArtAuctionApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>How to use Zustand and Zustand middleware.</p>
+            <p>How to create an auction app with a bidding system.</p>
           </li>
           <li>
-            <p>How to use React.</p>
+            <p>How to use Tailwind CSS and implement styles that Tailwind does not provide.</p>
           </li>
           <li>
-            <p>How to use MUI components.</p>
+            <p>That I need to work more on making my design more appealing and responsive.</p>
           </li>
           <li>
             <p>
-              How to make data persist when using Zustand.
+That I need to ensure I use standardised error handling and implement caching where possible.
+            </p>
+          </li>
+           <li>
+            <p>
+I should also look into type safety in the future, as I have not used TypeScript in this project.
             </p>
           </li>
 
