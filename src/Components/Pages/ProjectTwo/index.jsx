@@ -8,10 +8,9 @@
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 
 import EasyBuyImages from "../../../assets/Images/EasyBuyImages.png";
-import MainImage from "../../../assets/Images/MainImageHolidaze.png";
+import MainImage from "../../../assets/Images/EasyBuyMainImg.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
-import MsgImg from "../../../assets/Images/UserMessageImg.png";
 import EasyBuyLogo from "../../../assets/Images/EasyBuyLogo.png";
 
 const EasyBuyStoreApp = () => {
@@ -26,6 +25,8 @@ const EasyBuyStoreApp = () => {
   const cardImg = EasyBuyImages;
   const techStack =
     " React, Vite, Zustand, MUI, Emotion, CSS Modules, React Hook Form, React Router DOM, Yup, Node.js, ESLint ";
+    const liveSiteLink = "https://easybuyonline.netlify.app/";
+    const readmeLink = "https://github.com/lem31/mystore/blob/main/README.md";
   return (
     <div>
       <div>
@@ -37,12 +38,14 @@ const EasyBuyStoreApp = () => {
           functionText={functionText}
           usersText={usersText}
           Additional={Additional}
+            liveSiteLink={liveSiteLink}
+            readmeLink={readmeLink}
         />
       </div>
       <div className={ProjectStyles.projectPageMainImageDiv}>
         <img
           src={MainImage}
-          alt="Holidaze Main"
+          alt="EasyBuy Main"
           className={ProjectStyles.projectPageMainImage}
         />
       </div>
@@ -53,34 +56,20 @@ const EasyBuyStoreApp = () => {
           style={{ margin: 0 }}
           className={globStyles.h3}
         >
-          Implemented Feedback from Previous Projects
+          Implemented Feedback from Tutors
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li className={ProjectStyles.li}>
             {" "}
             <p>
-              Created user friendly error/warning/success/alert messages using
-              toastr
+             Cleaned up the code by formatting it properly, removing unnecessary fragments, unused variables, console logs etc.
             </p>
           </li>
-        </ul>
-        <div className={ProjectStyles.projectPageMsgImgDivBox}>
-          <div className={ProjectStyles.projectPageMsgImgDiv}>
-            <img
-              src={MsgImg}
-              alt="Holidaze Messages"
-              className={ProjectStyles.projectPageMsgImg}
-            />
-          </div>
-        </div>
-        <ul className={ProjectStyles.Ul}>
-          <li>
-            {" "}
-            <p className={`${ProjectStyles.p} ${globStyles.body}`}>
-              {" "}
-              Improved the design and made it more simple and easy to use.
+            <li className={ProjectStyles.li}>
+            <p>
+              Added any missing JSDocs and ensured all React keys are stable and unique.
             </p>
-          </li>
+            </li>
         </ul>
 
         <h3
@@ -92,20 +81,18 @@ const EasyBuyStoreApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Listing cards' layout and spacing.</p>
+            <p>Added an active state to all buttons</p>
           </li>
           <li>
-            <p>Styling and positioning of some elements.</p>
+            <p>Added a popout effect to shopping cart button to make it more interactive</p>
           </li>
           <li>
-            <p>Spacing on the profile page.</p>
+            <p>Added a favorites bar and favorite buttons to all listings.</p>
           </li>
           <li>
-            <p>The Venue Availability page' styles and layout need tweaking.</p>
+            <p>Changed header to a fixed header </p>
           </li>
-          <li>
-            <p>Use more branches in the future for different tasks.</p>
-          </li>
+
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -115,17 +102,9 @@ const EasyBuyStoreApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Fetching and storing a large amount of data.</p>
+            <p>Learning how to use Zustand and getting data to display correctly when setting and retrieving data from the store. </p>
           </li>
-          <li>
-            <p>
-              Organizing folders and files when working on a larger project,
-              would have used less folders and reorganized if I'd had time.
-            </p>
-          </li>
-          <li>
-            <p>Styling MUI components.</p>
-          </li>
+
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -135,26 +114,20 @@ const EasyBuyStoreApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>How to use Zustand in a larger project.</p>
+            <p>How to use Zustand and Zustand middleware.</p>
           </li>
           <li>
-            <p>How to use React Hook Form and Yup for form validation.</p>
+            <p>How to use React.</p>
           </li>
           <li>
-            <p>How to use toastr and MUI libraries</p>
-          </li>
-          <li>
-            <p>
-              How important it is to keep files and folders organized when
-              working on a large project
-            </p>
+            <p>How to use MUI components.</p>
           </li>
           <li>
             <p>
-              To always use a separate branch from the development branch for
-              each task, the more branches the better.
+              How to make data persist when using Zustand.
             </p>
           </li>
+
         </ul>
       </div>
     </div>
