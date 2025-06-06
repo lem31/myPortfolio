@@ -18,8 +18,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "../Layout";
 import PortfolioPage from "../../Components/Pages/MyPortfolio";
 import HolidazeProject from "../Pages/ProjectOne";
-import ProjectTwo from "../Pages/ProjectTwo";
-// import ProjectThree from "../ProjectThree";
+import EasyBuyStoreApp from "../Pages/ProjectTwo";
+import ArtAuctionApp from "../Pages/ProjectThree";
 // import About from "../About";
 // import Contact from "../Contact";
 
@@ -44,13 +44,13 @@ function Router() {
 
            <Route
               path="/ProjectTwo"
-              element={<ProjectTwo />}
-            />
-            { /* <Route
-              path="/ProjectThree"
-              element={<ProjectThree />}
+              element={<EasyBuyStoreApp />}
             />
             <Route
+              path="/ProjectThree"
+              element={<ArtAuctionApp />}
+            />
+            { /* <Route
               path="/About"
               element={<About />}
             />
