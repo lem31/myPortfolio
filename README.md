@@ -42,10 +42,8 @@ MyPortfolio is a modern web application built with **React, Vite, and Material-U
 <tr>
 <th align='center' > ✨<strong><h4>Frontend </h4> </strong>  </th>
 <th align='center' > 🗂️ <strong><h4> Utilities & Notifications </h4> </strong> </th>
-<th align='center' >  🎨 <strong><h4> Development Tools</h4></strong>  </th>
-<th align='center' > 📝 <strong> <h4>Forms & Validation</h4> </strong>  </th>
-<th align='center' > 🛣️ <strong> <h4>Routing</h4> </strong>  </th>
-<th align='center' > 🛠️ <strong> <h4>Development Tools</h4></strong></th>
+<th align='center' >  🛠️  <strong><h4> Development Tools</h4></strong>  </th>
+
 </tr>
 <tr>
     <td>React, Vite, React Router, Material UI, Emotion</td>
