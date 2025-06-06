@@ -12,6 +12,11 @@ import MainImage from "../../../assets/Images/EasyBuyMainImg.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
 import EasyBuyLogo from "../../../assets/Images/EasyBuyLogo.png";
+import activeGif from "../../../assets/Images/ActiveStateVid.mov.gif";
+import popoutGif from "../../../assets/Images/ShoppingPopoutVid.mov.gif";
+import headerVid from "../../../assets/Videos/FixedHeaderVid.mov.mp4";
+import favImg from "../../../assets/Images/EasyBuyFavImg.png";
+
 
 const EasyBuyStoreApp = () => {
   const title = "EasyBuy Store App";
@@ -83,15 +88,28 @@ const EasyBuyStoreApp = () => {
           <li>
             <p>Added an active state to all buttons</p>
           </li>
+           <div className={ProjectStyles.imgDiv}>
+          <img src={activeGif} alt="Active button" />
+            </div>
           <li>
             <p>Added a popout effect to shopping cart button to make it more interactive</p>
           </li>
+           <div className={ProjectStyles.imgDiv}>
+          <img src={popoutGif} alt="Popout shopping cart" />
+            </div>
           <li>
             <p>Added a favorites bar and favorite buttons to all listings.</p>
+            <div className={ProjectStyles.imgDiv}>
+            <img src={favImg} alt="EasyBuy favorite Buttons and bar" />
+
+            </div>
           </li>
           <li>
             <p>Changed header to a fixed header </p>
           </li>
+           <div className={ProjectStyles.imgDiv}>
+          <video src={headerVid} controls></video>
+           </div>
 
         </ul>
         <h3
