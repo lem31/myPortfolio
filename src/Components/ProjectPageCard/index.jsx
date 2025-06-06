@@ -41,6 +41,7 @@ const ProjectPageCard = ({
   cardImg,
   techStack,
   Additional,
+  liveSiteLink, readmeLink,
 }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -160,7 +161,7 @@ const ProjectPageCard = ({
                   <Button className={ProjectStyles.projectPageButton}>
                     <Link
                       className={globStyles.links}
-                      href="https://holidaze-lem.netlify.app/"
+                      href={liveSiteLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -175,7 +176,7 @@ const ProjectPageCard = ({
                   <Button className={ProjectStyles.projectPageButton}>
                     <Link
                       className={globStyles.links}
-                      href="https://github.com/lem31/Holidaze-PE2/blob/main/README.md"
+                      href={readmeLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
