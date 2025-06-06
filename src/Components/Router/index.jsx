@@ -18,7 +18,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "../Layout";
 import PortfolioPage from "../../Components/Pages/MyPortfolio";
 import HolidazeProject from "../Pages/ProjectOne";
-// import ProjectTwo from "../ProjectTwo";
+import ProjectTwo from "../Pages/ProjectTwo";
 // import ProjectThree from "../ProjectThree";
 // import About from "../About";
 // import Contact from "../Contact";
@@ -42,11 +42,11 @@ function Router() {
               element={<HolidazeProject/>}
             />
 
-            { /*<Route
+           <Route
               path="/ProjectTwo"
               element={<ProjectTwo />}
             />
-            <Route
+            { /* <Route
               path="/ProjectThree"
               element={<ProjectThree />}
             />

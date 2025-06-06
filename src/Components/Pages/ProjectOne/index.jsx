@@ -25,6 +25,9 @@ const HolidazeProject = () => {
   const cardImg = HolidazeImages;
   const techStack =
     " React, Vite, Zustand, MUI, Emotion, CSS Modules, React Hook Form, React Router DOM, Yup, Node.js ";
+
+    const readmeLink ="https://github.com/lem31/Holidaze-PE2/blob/main/README.md";
+  const liveSiteLink = "https://holidaze-lem.netlify.app/";
   return (
     <div>
       <div>
@@ -36,6 +39,8 @@ const HolidazeProject = () => {
           functionText={functionText}
           usersText={usersText}
           Additional={Additional}
+          liveSiteLink={liveSiteLink}
+          readmeLink={readmeLink}
         />
       </div>
       <div className={ProjectStyles.projectPageMainImageDiv}>
