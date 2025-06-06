@@ -24,23 +24,18 @@ const ProjectCard = ({ title, image, link, description }) => {
     <>
       <Card
         className={portfolioStyles.projectCard}
-        onClick={() => { navigate(link); window.scrollTo(0, 0);}}
+        onClick={() => {
+          navigate(link);
+          window.scrollTo(0, 0);
+        }}
       >
         <div className={portfolioStyles.cardMediaDiv}>
           <CardMedia
+            className={portfolioStyles.cardMedia}
             component="img"
             image={image}
             alt={title}
-            sx={{
-              width: "100%",
-              height: "100%",
 
-              objectFit: "contain",
-              margin: "0 auto",
-              transition: "transform 0.3s ease-in-out",
-
-              display: "block",
-            }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           />{" "}
