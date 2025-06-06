@@ -1,13 +1,13 @@
 /**
- * HolidazeProject component displays detailed information about the Holidaze App project,
- * including its features, user stories, technology stack, improvements, challenges, and learnings.
+ * EasyBuyStoreApp component displays detailed information about the EasyBuy Store App project,
+ * including project overview, technology stack, improvements, challenges, and learnings.
  *
  * @component
- * @returns {JSX.Element} The rendered HolidazeProject page.
+ * @returns {JSX.Element} The rendered EasyBuy Store App project page.
  */
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 
-import EasyBuyImages from "../../../assets/Images/EasyBuyImages.png";
+import EasyBuyImages from "../../../assets/Images/StoreAppImages.png";
 import MainImage from "../../../assets/Images/EasyBuyMainImg.png";
 import globStyles from "../../../CSS_Modules/Global/index.module.css";
 import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
@@ -16,7 +16,6 @@ import activeGif from "../../../assets/Images/ActiveStateVid.mov.gif";
 import popoutGif from "../../../assets/Images/ShoppingPopoutVid.mov.gif";
 import headerVid from "../../../assets/Videos/FixedHeaderVid.mov.mp4";
 import favImg from "../../../assets/Images/EasyBuyFavImg.png";
-
 
 const EasyBuyStoreApp = () => {
   const title = "EasyBuy Store App";
@@ -30,8 +29,11 @@ const EasyBuyStoreApp = () => {
   const cardImg = EasyBuyImages;
   const techStack =
     " React, Vite, Zustand, MUI, Emotion, CSS Modules, React Hook Form, React Router DOM, Yup, Node.js, ESLint ";
-    const liveSiteLink = "https://easybuyonline.netlify.app/";
-    const readmeLink = "https://github.com/lem31/mystore/blob/main/README.md";
+  const liveSiteLink = "https://easybuyonline.netlify.app/";
+  const readmeLink = "https://github.com/lem31/mystore/blob/main/README.md";
+
+  const imageCaptionText =
+    "Top Left: Mobile View Home Page, Top Right: Desktop View Home Page, Bottom Left: Product card on individual listing page, Bottom Right: Related products on individual listing page.";
   return (
     <div>
       <div>
@@ -43,8 +45,9 @@ const EasyBuyStoreApp = () => {
           functionText={functionText}
           usersText={usersText}
           Additional={Additional}
-            liveSiteLink={liveSiteLink}
-            readmeLink={readmeLink}
+          liveSiteLink={liveSiteLink}
+          readmeLink={readmeLink}
+          imageCaptionText={imageCaptionText}
         />
       </div>
       <div className={ProjectStyles.projectPageMainImageDiv}>
@@ -67,14 +70,16 @@ const EasyBuyStoreApp = () => {
           <li className={ProjectStyles.li}>
             {" "}
             <p>
-             Cleaned up the code by formatting it properly, removing unnecessary fragments, unused variables, console logs etc.
+              Cleaned up the code by formatting it properly, removing
+              unnecessary fragments, unused variables, console logs etc.
             </p>
           </li>
-            <li className={ProjectStyles.li}>
+          <li className={ProjectStyles.li}>
             <p>
-              Added any missing JSDocs and ensured all React keys are stable and unique.
+              Added any missing JSDocs and ensured all React keys are stable and
+              unique.
             </p>
-            </li>
+          </li>
         </ul>
 
         <h3
@@ -88,29 +93,42 @@ const EasyBuyStoreApp = () => {
           <li>
             <p>Added an active state to all buttons</p>
           </li>
-           <div className={ProjectStyles.imgDiv}>
-          <img src={activeGif} alt="Active button" />
-            </div>
+          <div className={ProjectStyles.imgDiv}>
+            <img
+              src={activeGif}
+              alt="Active button"
+            />
+          </div>
           <li>
-            <p>Added a popout effect to shopping cart button to make it more interactive</p>
+            <p>
+              Added a popout effect to shopping cart button to make it more
+              interactive
+            </p>
           </li>
-           <div className={ProjectStyles.imgDiv}>
-          <img src={popoutGif} alt="Popout shopping cart" />
-            </div>
+          <div className={ProjectStyles.imgDiv}>
+            <img
+              src={popoutGif}
+              alt="Popout shopping cart"
+            />
+          </div>
           <li>
             <p>Added a favorites bar and favorite buttons to all listings.</p>
             <div className={ProjectStyles.imgDiv}>
-            <img src={favImg} alt="EasyBuy favorite Buttons and bar" />
-
+              <img
+                src={favImg}
+                alt="EasyBuy favorite Buttons and bar"
+              />
             </div>
           </li>
           <li>
             <p>Changed header to a fixed header </p>
           </li>
-           <div className={ProjectStyles.imgDiv}>
-          <video src={headerVid} controls></video>
-           </div>
-
+          <div className={ProjectStyles.imgDiv}>
+            <video
+              src={headerVid}
+              controls
+            ></video>
+          </div>
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -120,9 +138,11 @@ const EasyBuyStoreApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Learning how to use Zustand and getting data to display correctly when setting and retrieving data from the store. </p>
+            <p>
+              Learning how to use Zustand and getting data to display correctly
+              when setting and retrieving data from the store.{" "}
+            </p>
           </li>
-
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -141,11 +161,8 @@ const EasyBuyStoreApp = () => {
             <p>How to use MUI components.</p>
           </li>
           <li>
-            <p>
-              How to make data persist when using Zustand.
-            </p>
+            <p>How to make data persist when using Zustand.</p>
           </li>
-
         </ul>
       </div>
     </div>

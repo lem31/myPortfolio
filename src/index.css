@@ -1,18 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --primary-color: #ffffff;
-  --secondary-color:#fdb8fd;
-  --secondary-color-2:rgb(206, 25, 125);
-  --secondary-color-3:#fc72a4;
+  --secondary-color: #fdb8fd;
+  --secondary-color-2: rgb(206, 25, 125);
+  --secondary-color-3: #fc72a4;
   --tertiary-color: rgb(172, 17, 220);
   --tertiary-color-2: #000000;
-  --font-family: 'Exo 2', sans-serif;
-   --Hover-color:rgb(202, 85, 150);
-  --Hover-color-2:rgb(184, 91, 212);
-  --Active-color-1:rgb(79, 4, 102);
+  --font-family: "Exo 2", sans-serif;
+  --Hover-color: rgb(202, 85, 150);
+  --Hover-color-2: rgb(184, 91, 212);
+  --Active-color-1: rgb(79, 4, 102);
   --Active-color-2: #7f80ff;
   --font-size-x-large: 48px;
   --font-size-large: 40px;
@@ -27,7 +25,6 @@
   --font-size-x-tiny: 10px;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -36,18 +33,12 @@ body {
 
   min-height: 100vh;
   overflow-x: hidden;
-
 }
-html{
+html {
   overflow-x: hidden;
 }
 
-
- main{
+main {
   min-height: 100vh;
-overflow-x: hidden;
- }
-
-
-
-
+  overflow-x: hidden;
+}

@@ -40,7 +40,9 @@ const ProjectPageCard = ({
   cardImg,
   techStack,
   Additional,
-  liveSiteLink, readmeLink,
+  liveSiteLink,
+  readmeLink,
+  imageCaptionText,
 }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -72,12 +74,16 @@ const ProjectPageCard = ({
         <CardContent className={ProjectStyles.projectCardContent}>
           <div className={ProjectStyles.projectCardTextDiv}>
             <div className={ProjectStyles.logoH1Div}>
+              <div className={ProjectStyles.logoDiv}>
               <img
                 src={logoimg}
                 alt="Holidaze Logo"
-                className={ProjectStyles.HolidazeLogo}
+                className={ProjectStyles.logoImg}
               />
+              </div>
+
               <h1 className={globStyles.h1}>{title}</h1>
+              <div className={ProjectStyles.iconButtonsDiv}>
               <IconButton
                 onClick={handleShare}
                 className={ProjectStyles.shareIcon}
@@ -90,6 +96,7 @@ const ProjectPageCard = ({
               >
                 <ContentCopyIcon />
               </IconButton>
+              </div>
             </div>
             <div className={ProjectStyles.TextImageDiv}>
               <div className={ProjectStyles.projectCardDescription}>
@@ -130,13 +137,16 @@ const ProjectPageCard = ({
                 </Typography>
               </div>
               <div className={ProjectStyles.projectCardImgDiv}>
-                <img
-                  src={cardImg}
-                  alt="Holidaze Images"
-                  className={ProjectStyles.projectCardImage}
-                  onMouseEnter={() => setHovered(true)}
-                  onMouseLeave={() => setHovered(false)}
-                />
+                <div className={ProjectStyles.imgAndCaptionDiv}>
+                  <img
+                    src={cardImg}
+                    alt="Holidaze Images"
+                    className={ProjectStyles.projectCardImage}
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                  />
+                  <p className={globStyles.labels}>{imageCaptionText}</p>
+                </div>
 
                 <Typography
                   variant="div"
