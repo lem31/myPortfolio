@@ -1,9 +1,9 @@
 /**
- * HolidazeProject component displays detailed information about the Holidaze App project,
- * including its features, user stories, technology stack, improvements, challenges, and learnings.
+ * ArtAuctionApp component displays detailed information about the Art Auction App project,
+ * including its features, tech stack, improvements, challenges, and learnings.
  *
  * @component
- * @returns {JSX.Element} The rendered HolidazeProject page.
+ * @returns {JSX.Element} The rendered ArtAuctionApp project page.
  */
 import ProjectPageCard from "../../ProjectPageCard/index.jsx";
 
@@ -14,7 +14,6 @@ import ProjectStyles from "../../../CSS_Modules/Projects/index.module.css";
 import AuctionAppLogo from "../../../assets/Images/AuctionAppLogo.png";
 import BidBoxVid from "../../../assets/Videos/BidBoxVid.mov";
 import msgImg from "../../../assets/Images/msgImgAuctionApp.png";
-
 
 const ArtAuctionApp = () => {
   const title = "Art Auction App";
@@ -28,8 +27,11 @@ const ArtAuctionApp = () => {
   const cardImg = AuctionAppImages;
   const techStack =
     " Vite, MUI, Emotion, Tailwind CSS, Post CSS, Prettier, ESLint ";
-    const liveSiteLink = "https://art-auction-app-meyer.vercel.app/";
-    const readmeLink = "https://github.com/lem31/JS2-Semester-Project-2/blob/main/README.md";
+  const liveSiteLink = "https://art-auction-app-meyer.vercel.app/";
+  const readmeLink =
+    "https://github.com/lem31/JS2-Semester-Project-2/blob/main/README.md";
+  const imageCaptionText =
+    "Top Left: Auction Listing card on Home Page, Top Center: Desktop View Home Page, Top Right: Create Listing Form, Bottom Center: Mobile View Home Page";
   return (
     <div>
       <div>
@@ -41,8 +43,9 @@ const ArtAuctionApp = () => {
           functionText={functionText}
           usersText={usersText}
           Additional={Additional}
-            liveSiteLink={liveSiteLink}
-            readmeLink={readmeLink}
+          liveSiteLink={liveSiteLink}
+          readmeLink={readmeLink}
+          imageCaptionText={imageCaptionText}
         />
       </div>
       <div className={ProjectStyles.projectPageMainImageDiv}>
@@ -64,20 +67,24 @@ const ArtAuctionApp = () => {
         <ul className={ProjectStyles.Ul}>
           <li className={ProjectStyles.li}>
             {" "}
+            <p>Standardised error handling and removed all alerts.</p>
+          </li>
+          <li className={ProjectStyles.li}>
             <p>
-           Standardised error handling and removed all alerts.
+              Added request caching to some functions to improve performance.
             </p>
           </li>
-            <li className={ProjectStyles.li}>
+          <li className={ProjectStyles.li}>
             <p>
-             Added request caching to some functions to improve performance.
+              Tried to make the design more appealing and more responsive by
+              modifying the header and centering some text which looked out of
+              place. The search bar and categories were previously in the body
+              but are now in the header and I created a select box for the
+              categories on smaller screens. I also modified the layout of the
+              auction listings by moving the images to the top of the card
+              instead of to the side.
             </p>
-            </li>
-            <li className={ProjectStyles.li}>
-            <p>
-             Tried to make the design more appealing and more responsive by modifying the header and centering some text which looked out of place. The search bar and categories were previously in the body but are now in the header and I created a select box for the categories on smaller screens. I also modified the layout of the auction listings by moving the images to the top of the card instead of to the side.
-            </p>
-            </li>
+          </li>
         </ul>
 
         <h3
@@ -89,7 +96,10 @@ const ArtAuctionApp = () => {
         </h3>
         <ul className={ProjectStyles.Ul}>
           <li>
-            <p>Fixed view bids box display on listing page and home page, so that it displays just below the view bids button.</p>
+            <p>
+              Fixed view bids box display on listing page and home page, so that
+              it displays just below the view bids button.
+            </p>
           </li>
 
           <div className={ProjectStyles.bidVideoDiv}>
@@ -101,27 +111,29 @@ const ArtAuctionApp = () => {
               muted
               controls
             />
-            </div>
+          </div>
 
           <li>
-            <p>Added highest bid to all listings, so users no where to start bidding from.</p>
+            <p>
+              Added highest bid to all listings, so users no where to start
+              bidding from.
+            </p>
           </li>
 
           <li>
             <p>Updated notifications using toaster.</p>
-
           </li>
           <div className={ProjectStyles.msgImgDiv}>
-            <img src={msgImg} alt="Auction App Notifications" className={ProjectStyles.msgImg} />
-            </div>
+            <img
+              src={msgImg}
+              alt="Auction App Notifications"
+              className={ProjectStyles.msgImg}
+            />
+          </div>
 
-           <li>
+          <li>
             <p>Should add testing.</p>
-
           </li>
-
-
-
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -133,7 +145,6 @@ const ArtAuctionApp = () => {
           <li>
             <p>Learning how to use tailwind effectively. </p>
           </li>
-
         </ul>
         <h3
           style={{ margin: 0 }}
@@ -146,22 +157,29 @@ const ArtAuctionApp = () => {
             <p>How to create an auction app with a bidding system.</p>
           </li>
           <li>
-            <p>How to use Tailwind CSS and implement styles that Tailwind does not provide.</p>
-          </li>
-          <li>
-            <p>That I need to work more on making my design more appealing and responsive.</p>
+            <p>
+              How to use Tailwind CSS and implement styles that Tailwind does
+              not provide.
+            </p>
           </li>
           <li>
             <p>
-That I need to ensure I use standardised error handling and implement caching where possible.
+              That I need to work more on making my design more appealing and
+              responsive.
             </p>
           </li>
-           <li>
+          <li>
             <p>
-I should also look into type safety in the future, as I have not used TypeScript in this project.
+              That I need to ensure I use standardised error handling and
+              implement caching where possible.
             </p>
           </li>
-
+          <li>
+            <p>
+              I should also look into type safety in the future, as I have not
+              used TypeScript in this project.
+            </p>
+          </li>
         </ul>
       </div>
     </div>

@@ -23,7 +23,6 @@ import ArtAuctionApp from "../Pages/ProjectThree";
 // import About from "../About";
 // import Contact from "../Contact";
 
-
 function Router() {
   return (
     <>
@@ -33,16 +32,16 @@ function Router() {
             path="/"
             element={<Layout />}
           >
-           <Route
+            <Route
               index
               element={<PortfolioPage />}
             />
-            /*<Route
+            /*
+            <Route
               path="/ProjectOne"
-              element={<HolidazeProject/>}
+              element={<HolidazeProject />}
             />
-
-           <Route
+            <Route
               path="/ProjectTwo"
               element={<EasyBuyStoreApp />}
             />
@@ -50,7 +49,7 @@ function Router() {
               path="/ProjectThree"
               element={<ArtAuctionApp />}
             />
-            { /* <Route
+            {/* <Route
               path="/About"
               element={<About />}
             />

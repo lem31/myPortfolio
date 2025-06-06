@@ -29,58 +29,56 @@
   pointer-events: none;
 }
 .cardImg {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease-in-out;
-    scale: 1.8;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  scale: 1.8;
 
-    border: none;
+  border: none;
 
-    box-shadow: 0 0 40px 10px var(--secondary-color-2), 0 0 0 4px rgba(0,0,0,0.2);
+  box-shadow:
+    0 0 40px 10px var(--secondary-color-2),
+    0 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.cardMedia{
-    width: 100%;
-    height: 100%;
+.cardMedia {
+  width: 100% !important;
+  height: 100% !important;
 
-    object-fit: contain;
-    margin: 0 auto;
-    transition: transform 0.3s ease-in-out;
+  object-fit: contain !important;
+  margin: 0 auto !important;
+  transition: transform 0.3s ease-in-out !important;
 
-    display: block;
+  display: block  !important;
 }
 
 .video {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: contain;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: contain;
 
-background-color: var(--secondary-color);
-    scale: 1;
-
+  background-color: var(--secondary-color);
+  scale: 1;
 }
 
-.profileVideoDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.profileVideoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-
-overflow: visible;
-position: relative;
-
+  overflow: visible;
+  position: relative;
 }
 
-
-.portfolioPageDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   margin-bottom: 20px;
-    margin-top: 60px;
+.portfolioPageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .projectCard {
@@ -94,38 +92,59 @@ position: relative;
   justify-content: center;
   align-items: center;
   position: relative;
-    background-color: var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 
 .projectCard:hover {
-  box-shadow: 0 0 80px 20px var(--Active-color-1), 0 0 0 4px rgba(0,0,0,0.2);
+  box-shadow:
+    0 0 80px 20px var(--Active-color-1),
+    0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard:active {
+  box-shadow:
+    0 0 20px 20px var(--Active-color-1),
+    0 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profileCardH1Div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-height: 580px;
+  gap: 20px;
+}
+
+.portfolioTitleDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+@media (max-width: 486px){
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+  .cardMediaDiv {
+  width: 220px;
+  height: 120px;
+ min-width: 100px;
+}
+
+
+.projectCard {
+  width: 250px;
+  max-height: 300px;
 
 }
 
-.projectCard:active{
-    box-shadow: 0 0 20px 20px var(--Active-color-1), 0 0 0 10px rgba(0,0,0,0.2);
-}
 
-.profileCardH1Div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    max-height: 580px;
-    gap: 20px
 
 }
-
-.portfolioTitleDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    margin-top: 20px;
-}
-
-
-
