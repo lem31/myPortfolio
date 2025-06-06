@@ -19,7 +19,7 @@ import Layout from "../Layout";
 import PortfolioPage from "../../Components/Pages/MyPortfolio";
 import HolidazeProject from "../Pages/ProjectOne";
 import ProjectTwo from "../Pages/ProjectTwo";
-// import ProjectThree from "../ProjectThree";
+import ProjectThree from "../Pages/ProjectThree";
 // import About from "../About";
 // import Contact from "../Contact";
 
@@ -46,11 +46,11 @@ function Router() {
               path="/ProjectTwo"
               element={<ProjectTwo />}
             />
-            { /* <Route
+            <Route
               path="/ProjectThree"
               element={<ProjectThree />}
             />
-            <Route
+            { /* <Route
               path="/About"
               element={<About />}
             />
