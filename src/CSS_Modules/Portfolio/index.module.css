@@ -132,14 +132,65 @@
     width: 250px;
     height: 250px;
   }
-  .cardMediaDiv {
-    width: 220px;
-    height: 120px;
-    min-width: 100px;
+
+
+
+
+   .cardMediaDiv img {
+    width: 100%;
+     height: 100%;
+    max-width: 100%;
+    min-width: 10%;
+    object-fit: contain;
+width: auto;
+
+
   }
+
+.cardMediaDiv {
+  width: 100% !important;
+  max-width: 300px !important;
+  min-width: 80px !important;
+  height: 220px !important;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  overflow: visible;
+}
+
 
   .projectCard {
     width: 250px;
     max-height: 300px;
   }
+
+  .projectCard {
+  width: 100% !important;
+  max-width: 240px !important;
+height: max-content !important;
+  overflow: visible;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-color) !important;
+}
+
+.profileVideoDiv {
+width: 100% !important;
+
+}
+
+.profileVideoDiv video {
+width: 200px;
+height: 200px;
+
+}
 }
