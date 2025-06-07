@@ -45,13 +45,14 @@ const PortfolioPage = () => {
 
         <div className={portfolioStyles.portfolioTitleDiv}>
           <h1 className={globStyles.h1}>Portfolio</h1>
-
+<div className={portfolioStyles.portfolioIntro}>
           <p className={globStyles.body}>
             {" "}
             Welcome to my portfolio! Here, you can explore some of the projects
             I've worked on. Each project showcases my skills and creativity as a
             developer. Click on any project card title to learn more about it.
           </p>
+          </div>
         </div>
       </div>
 
