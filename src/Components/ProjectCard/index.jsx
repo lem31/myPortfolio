@@ -48,7 +48,7 @@ const ProjectCard = ({ title, image, link, description }) => {
             {title}
           </Typography>
           <Typography
-            className={globStyles.p}
+            className={globStyles.body}
             sx={{ fontWeight: "400" }}
           >
             {" "}

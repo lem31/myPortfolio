@@ -59,7 +59,7 @@ const EasyBuyStoreApp = () => {
       </div>
 
       <div className={ProjectStyles.projectPageTextDiv}>
-        <h2 className={globStyles.h2}>Project Reflection/Improvements</h2>
+        <h2 style={{padding: '10px'}} className={globStyles.h2}>Project Reflection/Improvements</h2>
         <h3
           style={{ margin: 0 }}
           className={globStyles.h3}
