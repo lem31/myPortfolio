@@ -19,6 +19,8 @@ import globStyles from "../../CSS_Modules/Global/index.module.css";
 const ProjectCard = ({ title, image, link, description }) => {
   const navigate = useNavigate();
   const [hovered, setHovered] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false);
+
 
   return (
     <>
@@ -58,10 +60,20 @@ const ProjectCard = ({ title, image, link, description }) => {
       </Card>
       {hovered && (
         <div className={portfolioStyles.cardImgDiv}>
+          {!isZoomed && (
+  <div className={portfolioStyles.zoomHint}>
+    Tap to zoom
+  </div>
+)}
+
           <img
             src={image}
             alt={title}
-            className={portfolioStyles.cardImg}
+            className={`${portfolioStyles.cardImg} ${isZoomed ? portfolioStyles.zoomed : ""}`}
+            onMouseEnter={() => setIsZoomed(true)}
+            onMouseLeave={() => setIsZoomed(false)}
+            onClick={() => setIsZoomed(!isZoomed)}
+            style={{ cursor: "pointer" }}
           />
         </div>
       )}
