@@ -27,26 +27,37 @@ const ProjectCard = ({ title, image, link, description }) => {
     <>
       <Card
         className={portfolioStyles.projectCard}
-        onClick={() => {
-          navigate(link);
-          window.scrollTo(0, 0);
+        onClick={(e) => {
+          if (e.target.tagName !== "IMG") {
+            navigate(link);
+            window.scrollTo(0, 0);
+          }
         }}
       >
         <div className={portfolioStyles.cardMediaDiv}>
-           {showHint && !isZoomed && (
-  <div className={portfolioStyles.zoomHint}>
-    Tap to zoom
-  </div>
-)}
+
+            <div className={portfolioStyles.zoomHint}>
+              Tap to zoom
+            </div>
+
           <CardMedia
-            className={portfolioStyles.cardMedia}
+
+            className={`${portfolioStyles.cardMedia} ${isZoomed ? portfolioStyles.zoomed : ""}`}
             component="img"
             image={image}
             alt={title}
-
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-          />{" "}
+        onClick={(e) => {
+    e.stopPropagation();
+    setIsZoomed(true);
+    if (!isZoomed && !hovered) {
+    setShowHint(true);}
+  }}
+
+
+
+          />
         </div>
         <CardContent>
           <Typography
@@ -59,38 +70,39 @@ const ProjectCard = ({ title, image, link, description }) => {
             className={globStyles.body}
             sx={{ fontWeight: "400" }}
           >
-            {" "}
             {description}
           </Typography>
         </CardContent>
+
       </Card>
 
 
       {hovered && (
-        <div className={portfolioStyles.cardImgDiv}>
-
-
+        <div className={portfolioStyles.cardImgDiv} onClick={(e) =>{e.stopPropagation(); {setIsZoomed(false);
+         }}}>
+          {showHint && !isZoomed && (
+            <div className={portfolioStyles.zoomHint}>
+              Tap to zoom
+            </div>
+          )}
           <img
+          onClick={(e) =>{
+            e.stopPropagation();
+             {setIsZoomed(false);
+
+
+          }}}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
             src={image}
             alt={title}
-            className={`${portfolioStyles.cardImg} ${isZoomed ? portfolioStyles.zoomed : ""}`}
-            onMouseEnter={() => setIsZoomed(true)}
-            onMouseLeave={() => setIsZoomed(false)}
-              onClick={() => {
-    setIsZoomed(!isZoomed);
-    setShowHint(false);
-  }}
-
+            className={`${portfolioStyles.cardImg} ${isZoomed ? portfolioStyles.zoomed : ""} `}
             style={{ cursor: "pointer" }}
+
           />
-           {showHint && !isZoomed && (
-  <div className={portfolioStyles.zoomHint}>
-    Tap to zoom
-  </div>
-)}
+
         </div>
       )}
-
     </>
   );
 };

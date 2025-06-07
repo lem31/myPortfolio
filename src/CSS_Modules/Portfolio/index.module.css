@@ -12,6 +12,11 @@
   overflow: visible;
 }
 
+.zoomHint{
+  visibility: hidden;
+}
+
+
 .projectCardsDiv {
   display: flex;
   flex-direction: row;
@@ -177,6 +182,7 @@
   }
 
   .zoomHint {
+visibility: visible !important;
     position: absolute;
   bottom: 10px;
   background: rgba(0, 0, 0, 0.6);
@@ -190,9 +196,6 @@
   z-index: 1000 !important;
   }
 
-  .zoomHint.hidden {
-    opacity: 0;
-  }
 
   .cardImg::after {
     content: "Click to Zoom";
