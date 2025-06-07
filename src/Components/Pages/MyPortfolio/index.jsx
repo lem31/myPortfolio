@@ -56,17 +56,8 @@ const PortfolioPage = () => {
       </div>
 
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "20px",
-          justifyContent: "center",
-          width: "100%",
-          maxWidth: "1260px",
-          flexWrap: "wrap",
-          paddingTop: "120px",
-          margin: "0 auto",
-        }}
+      className={portfolioStyles.projectCardsDiv}
+
       >
         {projects.map((project, index) => (
           <ProjectCard
