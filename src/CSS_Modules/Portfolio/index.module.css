@@ -178,14 +178,16 @@
 
   .zoomHint {
     position: absolute;
-    bottom: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1 !important;
+  z-index: 1000 !important;
   }
 
   .zoomHint.hidden {
