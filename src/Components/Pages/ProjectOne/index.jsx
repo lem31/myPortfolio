@@ -58,7 +58,7 @@ const HolidazeProject = () => {
       <div className={ProjectStyles.projectPageTextDiv}>
         <h2 style={{padding: '10px'}}className={globStyles.h2}>Project Reflection/Improvements</h2>
         <h3
-          style={{ margin: 0 }}
+          style={{ margin: 0, paddingLeft: '20px' }}
           className={globStyles.h3}
         >
           Implemented Feedback from Previous Projects
