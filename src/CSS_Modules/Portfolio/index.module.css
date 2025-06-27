@@ -25,7 +25,7 @@
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  paddint-top: 120px;
+  padding-top: 120px;
   flex-wrap: wrap;
 }
 
@@ -225,6 +225,9 @@ visibility: visible !important;
     align-items: center;
     width: 100%;
     max-width: 300px;
+    height: 100%;
+    position: relative;
+
   }
 
   .portfolioPageDiv {
@@ -293,4 +296,12 @@ visibility: visible !important;
     width: 200px;
     height: 200px;
   }
+}
+
+@media (max-width: 768px){
+  .projectCardsDiv {
+
+  padding-top: 120px;
+
+}
 }

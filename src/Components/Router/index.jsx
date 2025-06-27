@@ -20,7 +20,7 @@ import PortfolioPage from "../../Components/Pages/MyPortfolio";
 import HolidazeProject from "../Pages/ProjectOne";
 import EasyBuyStoreApp from "../Pages/ProjectTwo";
 import ArtAuctionApp from "../Pages/ProjectThree";
-// import About from "../About";
+import About from "../Pages/About";
 // import Contact from "../Contact";
 
 function Router() {
@@ -49,11 +49,11 @@ function Router() {
               path="/ProjectThree"
               element={<ArtAuctionApp />}
             />
-            {/* <Route
+            <Route
               path="/About"
               element={<About />}
             />
-            <Route
+            {/* <Route
               path="/Contact"
               element={<Contact />}
             /> */}
