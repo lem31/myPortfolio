@@ -1,6 +1,8 @@
 import Styles from '../../../CSS_Modules/About/index.module.css';
 import gStyles from '../../../CSS_Modules/Global/index.module.css';
 import LanguageImg from '../../../assets/Images/Languages.svg'
+import FrameworkImg from '../../../assets/Images/Frameworks.svg'
+import StylesImg from '../../../assets/Images/Styling.svg'
 import {useState} from 'react';
 
 const About = () => {
@@ -12,7 +14,7 @@ const About = () => {
             <h1 className={gStyles.h1}>COMING SOON</h1>
             </div>
 
-    {/* <div className="about-page">
+    <div className="about-page">
 
         <div>
       <h1 className={gStyles.h1}>About Me</h1>
@@ -46,10 +48,83 @@ When I'm not coding, you'll probably find me exploring coastal views, brainstorm
         </div>
 
     </div>
+
+      <div className={Styles.cardContainer}   aria-label="Click to view tech stack details" onClick={() => setFlipped(!flipped)}>
+        <div className={`${Styles.card} ${flipped ? 'flipped' : ''}`}>
+        <div className={`${Styles.cardFront} ${Styles.cardFace}`}>
+            <div className={Styles.tapHint}>Tap to flip</div>
+        <h3 className={Styles.h3}>Styling & Markup</h3>
+        <img src={StylesImg} alt="Styles & Markup" className={Styles.img} />
+</div>
+<div className={`${Styles.cardBack} ${Styles.cardFace}`}>
+        <ul className={gStyles.ul}>
+            <li>CSS</li>
+            <li>CSS Modules</li>
+            <li>MUI</li>
+            <li>Tailwind</li>
+            <li>Sass</li>
+            <li>Bootstrap</li>
+            <li>HTML</li>
+        </ul>
+        </div>
+        </div>
+
+    </div>
+
+      <div className={Styles.cardContainer}   aria-label="Click to view tech stack details" onClick={() => setFlipped(!flipped)}>
+        <div className={`${Styles.card} ${flipped ? 'flipped' : ''}`}>
+        <div className={`${Styles.cardFront} ${Styles.cardFace}`}>
+            <div className={Styles.tapHint}>Tap to flip</div>
+        <h3 className={Styles.h3}>Frameworks/Libraries</h3>
+        <img src={FrameworkImg} alt="Frameworks" className={Styles.img} />
+</div>
+<div className={`${Styles.cardBack} ${Styles.cardFace}`}>
+        <ul className={gStyles.ul}>
+            <li>React</li>
+            <li>Zustand</li>
+            <li>toastr</li>
+        </ul>
+        </div>
+        </div>
+
+    </div>
+
+       <div className={Styles.cardContainer}   aria-label="Click to view tech stack details" onClick={() => setFlipped(!flipped)}>
+        <div className={`${Styles.card} ${flipped ? 'flipped' : ''}`}>
+        <div className={`${Styles.cardFront} ${Styles.cardFace}`}>
+            <div className={Styles.tapHint}>Tap to flip</div>
+        <h3 className={Styles.h3}>Frameworks/Libraries</h3>
+        <img src={LanguageImg} alt="Languages" className={Styles.img} />
+</div>
+<div className={`${Styles.cardBack} ${Styles.cardFace}`}>
+        <ul className={gStyles.ul}>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+        </ul>
+        </div>
+        </div>
+
+    </div>
+       <div className={Styles.cardContainer}   aria-label="Click to view tech stack details" onClick={() => setFlipped(!flipped)}>
+        <div className={`${Styles.card} ${flipped ? 'flipped' : ''}`}>
+        <div className={`${Styles.cardFront} ${Styles.cardFace}`}>
+            <div className={Styles.tapHint}>Tap to flip</div>
+        <h3 className={Styles.h3}>Frameworks/Libraries</h3>
+        <img src={LanguageImg} alt="Languages" className={Styles.img} />
+</div>
+<div className={`${Styles.cardBack} ${Styles.cardFace}`}>
+        <ul className={gStyles.ul}>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+        </ul>
+        </div>
+        </div>
+
+    </div>
 </div>
 
 </div>
-    </div> */}
+    </div>
     </div>
   );
 }
