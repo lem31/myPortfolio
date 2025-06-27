@@ -298,10 +298,10 @@ visibility: visible !important;
   }
 }
 
-@media (max-width: 768px){
+@media (min-width: 487px) and (max-width: 768px){
   .projectCardsDiv {
 
-  padding-top: 120px;
+  padding-top: 200px;
 
 }
 }

@@ -48,9 +48,9 @@ const PortfolioPage = () => {
 <div className={portfolioStyles.portfolioIntro}>
           <p className={globStyles.body}>
             {" "}
-            Welcome to my portfolio! Here, you can explore some of the projects
-            I've worked on. Each project showcases my skills and creativity as a
-            developer. Click on any project card title to learn more about it.
+            Welcome to my portfolio! <br></br> Here, you can explore some of the projects
+            I've worked on.  <br></br>  <br></br> Each project showcases my skills and creativity as a
+            developer.  <br></br>  <br></br>Click on any project card title to learn more about it.
           </p>
           </div>
         </div>
