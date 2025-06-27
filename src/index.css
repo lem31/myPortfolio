@@ -3,14 +3,14 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: #fdb8fd;
-  --secondary-color-2: rgb(206, 25, 125);
+  --secondary-color-2: #ce197d;
   --secondary-color-3: #fc72a4;
   --tertiary-color: rgb(172, 17, 220);
   --tertiary-color-2: #000000;
   --font-family: "Exo 2", sans-serif;
   --Hover-color: rgb(202, 85, 150);
   --Hover-color-2: rgb(184, 91, 212);
-  --Active-color-1: rgb(79, 4, 102);
+  --Active-color-1: #4f0466;
   --Active-color-2: #7f80ff;
   --font-size-x-large: 48px;
   --font-size-large: 40px;
