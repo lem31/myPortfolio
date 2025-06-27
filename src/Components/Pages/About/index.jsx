@@ -15,9 +15,7 @@ const About = () => {
 
   return (
     <div>
-      <div className={Styles.comingSoonDiv}>
-        <h1 className={gStyles.h1}>COMING SOON</h1>
-      </div>
+
 
       <div className={Styles.aboutPageDiv}>
         <div>
