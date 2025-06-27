@@ -13,7 +13,7 @@ const About = () => {
 <div className={Styles.comingSoonDiv}>
             <h1 className={gStyles.h1}>COMING SOON</h1>
             </div>
-
+{/*
     <div className="about-page">
 
         <div>
@@ -124,7 +124,7 @@ When I'm not coding, you'll probably find me exploring coastal views, brainstorm
 </div>
 
 </div>
-    </div>
+    </div> */}
     </div>
   );
 }
