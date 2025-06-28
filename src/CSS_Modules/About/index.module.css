@@ -7,7 +7,7 @@
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center !important;
     justify-content: flex-start;
     list-style: none;
     padding: 0;
@@ -241,5 +241,13 @@ transition: transform 0.6s;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
+
+.cardContainer {
+
+  width: 150px;
+  height: 180px;
+
+}
+
 
 }
