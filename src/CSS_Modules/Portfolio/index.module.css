@@ -215,9 +215,7 @@ visibility: visible !important;
     opacity: 1;
   }
 
-  .projectCardsDiv {
-    margin-top: 0px;
-  }
+
 
   .portfolioIntro {
     display: flex;
@@ -299,21 +297,28 @@ visibility: visible !important;
 
   .profileCardH1Div {
  height: 100%;
- margin-bottom: 20px;
+ margin-bottom: 0;
 
 }
+
+ .projectCardsDiv {
+
+    height: 100%;
+    margin-top: 20px;
+  }
 
 }
 
 @media (min-width: 487px) and (max-width: 768px){
 
-  .projectCardsDiv {
-    margin-top: 200px;
+.projectCardsDiv {
+
+    height: 100%;
   }
 
   .profileCardH1Div {
  height: 100%;
- margin-bottom: 20px;
+ margin-bottom: 80px;
 
 }
 
