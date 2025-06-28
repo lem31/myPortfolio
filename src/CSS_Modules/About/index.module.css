@@ -235,4 +235,11 @@ transition: transform 0.6s;
   .techStackDiv {
     margin-top: 20px;
   }
+
+  .allCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
 }
