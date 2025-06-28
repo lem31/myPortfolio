@@ -297,6 +297,12 @@ visibility: visible !important;
     height: 200px;
   }
 
+  .profileCardH1Div {
+ height: 100%;
+ margin-bottom: 20px;
+ flex-direction: column;
+}
+
 }
 
 @media (min-width: 487px) and (max-width: 768px){
@@ -305,7 +311,11 @@ visibility: visible !important;
     margin-top: 200px;
   }
 
-
+  .profileCardH1Div {
+ height: 100%;
+ margin-bottom: 20px;
+ flex-direction: column;
+}
 
 
 }
